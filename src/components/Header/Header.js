@@ -1,6 +1,6 @@
 import Image from "../Image/Image";
 import img from "../../img/Profilephoto.jpg";
-import "./HeaderStyle.css";
+import "./HeaderStyles.css";
 import PersonalInfos from "../PersonalInfos/PersonalInfos";
 
 const Header = () => {

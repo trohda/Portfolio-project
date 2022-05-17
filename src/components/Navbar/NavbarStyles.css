@@ -1,0 +1,52 @@
+navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 3px;
+  font-family: "Alegreya Sans SC", sans-serif;
+  letter-spacing: 5px;
+  padding-left: 2px;
+}
+
+.navLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  width: 48%;
+  height: 20px;
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+  border-bottom: 1px solid gray;
+  border-radius: 0 0 8px 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.navLink p {
+  display: block;
+  text-align: center;
+}
+
+.navLink:hover {
+  letter-spacing: 15px;
+  font-size: 2rem;
+  width: 60%;
+  height: 40px;
+  text-shadow: 0px 0px 3px rgba(136, 136, 136, 0.75);
+}
+
+.navLink:active {
+  background-color: gray;
+  color: white;
+  text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.75);
+}
+
+@media only screen and (max-width: 502px) {
+  .navLink:hover {
+    letter-spacing: 12px;
+    font-size: 1.2rem;
+    width: 60%;
+    height: 40px;
+    text-shadow: 0px 0px 3px rgba(136, 136, 136, 0.75);
+  }
+}

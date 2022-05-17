@@ -1,6 +1,6 @@
 .personalInfos {
   font-family: "Alegreya Sans SC", sans-serif;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
 }
 
 .personalInfos h1 {
@@ -14,6 +14,7 @@
 
 @media only screen and (max-width: 502px) {
   .personalInfos {
+    letter-spacing: 2px;
     text-align: center;
   }
   .personalInfos h1 {
