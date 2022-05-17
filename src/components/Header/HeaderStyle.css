@@ -6,6 +6,8 @@
   border-bottom: 1px solid black;
   background-color: rgb(241, 241, 241);
   max-height: 500px;
+  background-image: url(../../img/headerbcgr1.svg);
+  background-size: cover;
 }
 
 .headerPortfolioImage {
