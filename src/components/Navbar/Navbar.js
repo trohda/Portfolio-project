@@ -1,11 +1,19 @@
-import NavLink from "../Navlink/NavLink";
+import { NavLink } from "react-router-dom";
+
 import "./NavbarStyles.css";
 
 const Navbar = () => {
   return (
     <navbar>
-      <NavLink navText={"My Projects"} className={"navLink"} />
-      <NavLink navText={"About Me"} className={"navLink"} />
+      <NavLink to="/" className="navLink">
+        Main Page
+      </NavLink>
+      <NavLink to="/projects" className="navLink">
+        My Projects
+      </NavLink>
+      <NavLink to="/aboutme" className="navLink">
+        About Me
+      </NavLink>
     </navbar>
   );
 };
