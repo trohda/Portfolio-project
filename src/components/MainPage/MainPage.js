@@ -10,7 +10,8 @@ const MainPage = () => {
         height: "200px",
         margin: "200px auto",
         textAlign: "center",
-        border: "1px solid black",
+        border: "1px solid gray",
+        color: "gray",
       }}
     >
       <p> Here will be Main Page </p>

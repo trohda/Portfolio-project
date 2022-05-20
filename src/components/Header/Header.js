@@ -8,7 +8,7 @@ const Header = () => {
     <header className="mainHeader">
       <Image
         src={img}
-        className={"headerPortfolioImage"}
+        className={"headerPortfolioImage "}
         alt={"Profile Photo"}
       />
       <PersonalInfos />

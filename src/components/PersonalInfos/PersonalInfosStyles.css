@@ -4,8 +4,33 @@
 }
 
 .personalInfos h1 {
+  opacity: 1;
   font-size: 2rem;
   font-weight: 100;
+  animation-name: kotek;
+  animation-duration: 10s;
+  animation-iteration-count: 1;
+}
+@keyframes kotek {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-700px);
+    transform: translateZ(-700px);
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.1;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
 }
 
 .personalInfos p {
