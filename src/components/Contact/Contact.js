@@ -1,6 +1,6 @@
-const AboutMe = () => {
+const Contact = () => {
   return (
-    <div
+    <section
       style={{
         display: "flex",
         flexDirection: "column",
@@ -13,11 +13,9 @@ const AboutMe = () => {
         border: "1px solid black",
       }}
     >
-      <section>
-        <p> Here will be infos about me </p>
-      </section>
-    </div>
+      <p> Here will be Contact </p>
+    </section>
   );
 };
 
-export default AboutMe;
+export default Contact;

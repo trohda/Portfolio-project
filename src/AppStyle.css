@@ -1,22 +1,18 @@
-/* .underConstruction::before {
-  background-color: rgba(0, 0, 0, 0.83);
+.MainPage {
+  background-color: rgba(117, 117, 117, 0);
+  padding-bottom: 100px;
+  animation-name: tlo;
+  animation-duration: 10s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
-.underConstruction span {
-  font-family: "Alegreya Sans SC", sans-serif;
-  letter-spacing: 4px;
-  position: fixed;
-  top: 50%;
-  right: 40%;
-  opacity: 0;
+@keyframes tlo {
+  0% {
+    background-color: rgba(206, 206, 206, 0);
+  }
+
+  100% {
+    background-color: rgba(168, 167, 167, 0.6);
+  }
 }
-
-.underConstructionOnLoad {
-  background-color: rgba(0, 0, 0, 0.83);
-}
-
-.down {
-
-  background-color: rgb(241, 241, 241);
-  background-size: cover;
-} */

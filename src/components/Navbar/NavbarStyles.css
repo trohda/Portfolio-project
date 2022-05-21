@@ -9,6 +9,7 @@ nav {
 }
 
 .navLink {
+  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,7 +22,7 @@ nav {
   border-bottom: 1px solid gray;
   border-radius: 0 0 8px 8px;
   cursor: pointer;
-  transition: all 0.3s;
+  transition: all 0.5s;
   text-decoration: none;
   color: rgb(128, 128, 128);
 }
@@ -36,13 +37,35 @@ nav {
   width: 60%;
   height: 40px;
   padding: 25px;
+
   text-shadow: 0px 0px 3px rgba(136, 136, 136, 0.75);
+  -webkit-box-shadow: 8px 8px 24px 0px rgb(82, 82, 82);
+  -moz-box-shadow: 8px 8px 24px 0px rgb(82, 82, 82);
+  box-shadow: 8px 8px 24px 0px rgb(82, 82, 82);
 }
 
-.navLink:active {
+.activeNavLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 15px;
+  font-size: 2rem;
+  width: 60%;
+  height: 40px;
+  padding: 25px;
+  cursor: default;
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+  border-bottom: 1px solid gray;
+  border-radius: 0 0 8px 8px;
+  text-decoration: none;
   background-color: rgb(109, 180, 109);
   color: white;
   text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.75);
+  -webkit-box-shadow: inset 72px 63px 39px -50px rgba(66, 68, 90, 1);
+  -moz-box-shadow: inset 72px 63px 39px -50px rgba(66, 68, 90, 1);
+  box-shadow: inset 72px 63px 39px -50px rgba(66, 68, 90, 1);
 }
 
 @media only screen and (max-width: 600px) {
@@ -56,7 +79,20 @@ nav {
     cursor: pointer;
   }
 
-  .navLink:hover {
+  .activeNavLink {
+    letter-spacing: 12px;
+    font-size: 1.2rem;
+    height: 20px;
+    margin-bottom: 6px;
+    border-radius: 6px 0 60px 16px;
+    color: white;
+    text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.75);
+    -webkit-box-shadow: inset 72px 63px 39px -50px rgba(66, 68, 90, 1);
+    -moz-box-shadow: inset 72px 63px 39px -50px rgba(66, 68, 90, 1);
+    box-shadow: inset 72px 63px 39px -50px rgba(66, 68, 90, 1);
+  }
+
+  /* .navLink:hover {
     letter-spacing: 12px;
     font-size: 1.2rem;
     height: 20px;
@@ -65,7 +101,23 @@ nav {
     -webkit-box-shadow: 8px 8px 24px 0px rgb(82, 82, 82);
     -moz-box-shadow: 8px 8px 24px 0px rgb(82, 82, 82);
     box-shadow: 8px 8px 24px 0px rgb(82, 82, 82);
+    background-color: rgb(109, 180, 109);
+    color: white;
+    text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.75);
+    -webkit-box-shadow: inset 72px 63px 39px -50px rgba(66, 68, 90, 1);
+    -moz-box-shadow: inset 72px 63px 39px -50px rgba(66, 68, 90, 1);
+    box-shadow: inset 72px 63px 39px -50px rgba(66, 68, 90, 1);
   }
+
+  .navLink:active {
+    background-color: rgb(109, 180, 109);
+    color: white;
+    text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.75);
+
+    -webkit-box-shadow: inset 72px 63px 39px -50px rgba(66, 68, 90, 1);
+    -moz-box-shadow: inset 72px 63px 39px -50px rgba(66, 68, 90, 1);
+    box-shadow: inset 72px 63px 39px -50px rgba(66, 68, 90, 1);
+  } */
 
   /* .navLink:active {
     order: -5;
