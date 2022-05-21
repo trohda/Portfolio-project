@@ -1,11 +1,11 @@
-navbar {
+nav {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   gap: 3px;
   font-family: "Alegreya Sans SC", sans-serif;
   letter-spacing: 5px;
-  padding-left: 2px;
+  padding-left: 1px;
 }
 
 .navLink {
@@ -14,7 +14,7 @@ navbar {
   align-items: center;
   text-align: center;
   padding: 10px;
-  width: 24%;
+  width: 21%;
   height: 20px;
   border-left: 1px solid gray;
   border-right: 1px solid gray;
@@ -40,17 +40,44 @@ navbar {
 }
 
 .navLink:active {
-  background-color: gray;
+  background-color: rgb(109, 180, 109);
   color: white;
   text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.75);
 }
 
-@media only screen and (max-width: 502px) {
+@media only screen and (max-width: 600px) {
+  .navLink {
+    margin-top: -1px;
+    width: 41%;
+    height: 11px;
+    font-size: 0.8rem;
+    border: 1px solid gray;
+    border-radius: 0 0 25px 8px;
+    cursor: pointer;
+  }
+
   .navLink:hover {
     letter-spacing: 12px;
     font-size: 1.2rem;
-    width: 60%;
-    height: 40px;
-    text-shadow: 0px 0px 3px rgba(136, 136, 136, 0.75);
+    height: 20px;
+    margin-bottom: 6px;
+    border-radius: 6px 0 60px 16px;
+    -webkit-box-shadow: 8px 8px 24px 0px rgb(82, 82, 82);
+    -moz-box-shadow: 8px 8px 24px 0px rgb(82, 82, 82);
+    box-shadow: 8px 8px 24px 0px rgb(82, 82, 82);
+  }
+
+  /* .navLink:active {
+    order: -5;
+  } */
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 5px;
+    padding-left: 1px;
+    gap: 0;
   }
 }

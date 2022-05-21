@@ -8,15 +8,15 @@ import "./AppStyle.css";
 import { useEffect, useState } from "react";
 
 function App() {
-  // const [style, setStyle] = useState("underConstruction");
+  //MOBILE DETECTORS
+  // var viewportWidthOnStart = window.innerWidth < 700 ? "Mobile" : "Desktop";
+  // const [windowWidth, setWindowWidth] = useState(viewportWidthOnStart);
+  // console.log(windowWidth);
+  // window.addEventListener("resize", function () {
+  //   var viewportWidth = window.innerWidth;
+  //   console.log(typeof windowWidth);
+  // });
 
-  // const styles = () => {
-  //   setStyle("underConstructionOnLoad");
-  // };
-
-  // const time = setTimeout(styles, 1500);
-
-  // const styles =
   return (
     <div className="underConstruction">
       {/* <span>Site is under construction</span> */}
