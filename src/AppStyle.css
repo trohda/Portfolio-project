@@ -1,18 +1,101 @@
 .MainPage {
-  background-color: rgba(117, 117, 117, 0);
+  background-color: rgba(253, 0, 0, 0);
   padding-bottom: 100px;
-  animation-name: tlo;
+  animation-name: backgroundAppear;
   animation-duration: 10s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
 
-@keyframes tlo {
+@keyframes backgroundAppear {
   0% {
     background-color: rgba(206, 206, 206, 0);
   }
 
   100% {
-    background-color: rgba(168, 167, 167, 0.6);
+    background-color: rgba(131, 131, 131, 0.6);
+  }
+}
+
+.underConstruction {
+  z-index: 100;
+  position: fixed;
+  top: 5%;
+  margin: 0 auto;
+  width: 100vw;
+  height: 80vh;
+  text-align: center;
+  font-size: 2.5rem;
+  font-family: "Alegreya Sans SC", sans-serif;
+  letter-spacing: 12px;
+  line-height: 6rem;
+  font-weight: 400;
+  animation-name: backgroundConstrution;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  padding: 20px;
+}
+
+@keyframes backgroundConstrution {
+  0% {
+    background-color: rgba(206, 206, 206, 0);
+  }
+
+  100% {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+}
+
+.span1 {
+  color: rgba(206, 206, 206, 0);
+  animation-name: span1Constrution;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 0.5s;
+}
+@keyframes span1Constrution {
+  0% {
+    color: rgba(206, 206, 206, 0);
+  }
+
+  100% {
+    color: rgba(255, 255, 255, 1);
+  }
+}
+
+.span2 {
+  color: rgba(206, 206, 206, 0);
+  animation-name: span1Constrution;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+}
+
+.span3 {
+  color: rgba(206, 206, 206, 0);
+  animation-name: span1Constrution;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 1.5s;
+}
+
+.span4 {
+  color: rgba(206, 206, 206, 0);
+  animation-name: span1Constrution;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+}
+
+@media only screen and (max-width: 500px) {
+  .underConstruction {
+    line-height: 4rem;
+    font-size: 1.8rem;
+    padding: 10px;
   }
 }

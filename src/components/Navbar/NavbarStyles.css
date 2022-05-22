@@ -23,6 +23,7 @@ nav {
   border-radius: 0 0 8px 8px;
   cursor: pointer;
   transition: all 0.5s;
+  transition-delay: 0.05s;
   text-decoration: none;
   color: rgb(128, 128, 128);
 }
@@ -63,9 +64,9 @@ nav {
   background-color: rgb(109, 180, 109);
   color: white;
   text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.75);
-  -webkit-box-shadow: inset 72px 63px 39px -50px rgba(66, 68, 90, 1);
-  -moz-box-shadow: inset 72px 63px 39px -50px rgba(66, 68, 90, 1);
-  box-shadow: inset 72px 63px 39px -50px rgba(66, 68, 90, 1);
+  -webkit-box-shadow: inset 42px 32px 38px -34px rgba(0, 0, 0, 1);
+  -moz-box-shadow: inset 42px 32px 38px -34px rgba(0, 0, 0, 1);
+  box-shadow: inset 42px 32px 38px -34px rgba(0, 0, 0, 1);
 }
 
 @media only screen and (max-width: 600px) {

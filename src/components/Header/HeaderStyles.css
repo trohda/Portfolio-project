@@ -8,6 +8,9 @@
   max-height: 500px;
   background-image: url(../../img/headerbcgr1.svg);
   background-size: cover;
+  -webkit-box-shadow: inset 0px 20px 57px -25px rgba(0, 0, 0, 1);
+  -moz-box-shadow: inset 0px 20px 57px -25px rgba(0, 0, 0, 1);
+  box-shadow: inset 0px 20px 57px -25px rgba(0, 0, 0, 1);
 }
 
 .headerPortfolioImage {

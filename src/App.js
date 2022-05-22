@@ -22,7 +22,16 @@ function App() {
   console.log(currentPage);
   return (
     <div>
-      {/* <span>Site is under construction</span> */}
+      <div className="underConstruction">
+        <span className="span1">Site</span>
+        <br />
+        <span className="span2">is</span>
+        <br />
+        <span className="span3">under</span>
+        <br />
+        <span className="span4">construction</span>
+      </div>
+
       <BrowserRouter>
         <Header />
         <div className={currentPage}>
