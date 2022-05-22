@@ -22,7 +22,7 @@ function App() {
   console.log(currentPage);
   return (
     <div>
-      <div className="underConstruction">
+      {/* <div className="underConstruction">
         <span className="span1">Site</span>
         <br />
         <span className="span2">is</span>
@@ -30,7 +30,7 @@ function App() {
         <span className="span3">under</span>
         <br />
         <span className="span4">construction</span>
-      </div>
+      </div> */}
 
       <BrowserRouter>
         <Header />
