@@ -6,7 +6,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Contact from "./components/Contact/Contact";
 import Projects from "./components/Projects/Projects";
 import "./AppStyle.css";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Footer from "./components/Footer/Footer";
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
   //   var viewportWidth = window.innerWidth;
   //   console.log(typeof windowWidth);
   // });
-  console.log(currentPage);
+
   return (
     <div>
       {/* <div className="underConstruction">

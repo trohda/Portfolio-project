@@ -1,8 +1,15 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
 import "./NavbarStyles.css";
 
 const Navbar = ({ currentPage, setCurrentPage }) => {
+  const location = useLocation();
+
+  if (location.pathname === "/") setCurrentPage("MainPage");
+  else if (location.pathname === "/projects") setCurrentPage("MyProjects");
+  else if (location.pathname === "/aboutme") setCurrentPage("AboutMe");
+  else if (location.pathname === "/contact") setCurrentPage("Contact");
+
   const handlerClick = (text) => {
     setCurrentPage(text);
   };
