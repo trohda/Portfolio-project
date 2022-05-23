@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 
 import "./NavbarStyles.css";
@@ -5,10 +6,12 @@ import "./NavbarStyles.css";
 const Navbar = ({ currentPage, setCurrentPage }) => {
   const location = useLocation();
 
-  if (location.pathname === "/") setCurrentPage("MainPage");
-  else if (location.pathname === "/projects") setCurrentPage("MyProjects");
-  else if (location.pathname === "/aboutme") setCurrentPage("AboutMe");
-  else if (location.pathname === "/contact") setCurrentPage("Contact");
+  useEffect(() => {
+    if (location.pathname === "/") setCurrentPage("MainPage");
+    else if (location.pathname === "/projects") setCurrentPage("MyProjects");
+    else if (location.pathname === "/aboutme") setCurrentPage("AboutMe");
+    else if (location.pathname === "/contact") setCurrentPage("Contact");
+  }, []);
 
   const handlerClick = (text) => {
     setCurrentPage(text);
@@ -25,7 +28,11 @@ const Navbar = ({ currentPage, setCurrentPage }) => {
       </NavLink>
       <NavLink
         to="/projects"
-        className={currentPage === "MyProjects" ? "activeNavLink" : "navLink"}
+        className={
+          currentPage === "MyProjects"
+            ? "activeNavLink yellowNavLink"
+            : "navLink"
+        }
         onClick={() => handlerClick("MyProjects")}
       >
         My Projects

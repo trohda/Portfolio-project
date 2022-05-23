@@ -1,0 +1,10 @@
+.singleProject {
+  width: 400px;
+  height: 400px;
+  margin: 45px;
+  border-radius: 8px;
+  background-color: rgb(117, 117, 18);
+  -webkit-box-shadow: 5px 5px 52px -30px rgba(255, 255, 255, 1);
+  -moz-box-shadow: 5px 5px 52px -30px rgba(255, 255, 255, 1);
+  box-shadow: 5px 5px 52px -30px rgba(255, 255, 255, 1);
+}

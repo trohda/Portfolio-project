@@ -1,106 +1,32 @@
 .MainPage {
-  /* min-height: 50vh; */
   background-image: url(img/BackgroundMainPage2.svg);
   background-size: cover;
   background-position: center;
-
-  /* background-color: rgba(253, 0, 0, 0); */
-  /* padding-bottom: 100px;
-  animation-name: backgroundAppear;
-  animation-duration: 10s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards; */
+  background-color: rgba(0, 0, 0, 0);
+  animation-name: makeWhite;
+  animation-duration: 4s;
 }
 
-@keyframes backgroundAppear {
+@keyframes makeWhite {
   0% {
-    background-color: rgba(206, 206, 206, 0);
+    background-color: rgba(0, 0, 0, 0.5);
   }
-
   100% {
-    background-color: rgba(131, 131, 131, 0.6);
+    background-color: rgba(0, 0, 0, 0);
   }
 }
 
-.underConstruction {
-  z-index: 100;
-  position: fixed;
-  top: 5%;
-  margin: 0 auto;
-  width: 100vw;
-  height: 80vh;
-  text-align: center;
-  font-size: 2.5rem;
-  font-family: "Alegreya Sans SC", sans-serif;
-  letter-spacing: 12px;
-  line-height: 6rem;
-  font-weight: 400;
-  animation-name: backgroundConstrution;
-  animation-duration: 2s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-  padding: 20px;
+.MyProjects {
+  background-color: rgba(0, 0, 0, 1);
+  animation-name: makeBlack;
+  animation-duration: 4s;
 }
 
-@keyframes backgroundConstrution {
+@keyframes makeBlack {
   0% {
-    background-color: rgba(206, 206, 206, 0);
+    background-color: rgba(0, 0, 0, 0);
   }
-
   100% {
-    background-color: rgba(0, 0, 0, 0.8);
-  }
-}
-
-.span1 {
-  color: rgba(206, 206, 206, 0);
-  animation-name: span1Constrution;
-  animation-duration: 2s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-  animation-delay: 0.5s;
-}
-@keyframes span1Constrution {
-  0% {
-    color: rgba(206, 206, 206, 0);
-  }
-
-  100% {
-    color: rgba(255, 255, 255, 1);
-  }
-}
-
-.span2 {
-  color: rgba(206, 206, 206, 0);
-  animation-name: span1Constrution;
-  animation-duration: 2s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-  animation-delay: 1s;
-}
-
-.span3 {
-  color: rgba(206, 206, 206, 0);
-  animation-name: span1Constrution;
-  animation-duration: 2s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-  animation-delay: 1.5s;
-}
-
-.span4 {
-  color: rgba(206, 206, 206, 0);
-  animation-name: span1Constrution;
-  animation-duration: 2s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-  animation-delay: 2s;
-}
-
-@media only screen and (max-width: 500px) {
-  .underConstruction {
-    line-height: 4rem;
-    font-size: 1.8rem;
-    padding: 10px;
+    background-color: rgba(0, 0, 0, 1);
   }
 }

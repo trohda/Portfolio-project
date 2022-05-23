@@ -4,7 +4,7 @@ import Header from "./components/Header/Header";
 import MainPage from "./components/MainPage/MainPage";
 import Navbar from "./components/Navbar/Navbar";
 import Contact from "./components/Contact/Contact";
-import Projects from "./components/Projects/Projects";
+import ProjectsList from "./components/Projects/ProjectsList";
 import "./AppStyle.css";
 import { useState } from "react";
 import Footer from "./components/Footer/Footer";
@@ -22,24 +22,14 @@ function App() {
 
   return (
     <div>
-      {/* <div className="underConstruction">
-        <span className="span1">Site</span>
-        <br />
-        <span className="span2">is</span>
-        <br />
-        <span className="span3">under</span>
-        <br />
-        <span className="span4">construction</span>
-      </div> */}
-
       <BrowserRouter>
-        <Header />
+        <Header currentPage={currentPage} />
         <div className={currentPage}>
           <Navbar currentPage={currentPage} setCurrentPage={setCurrentPage} />
 
           <Routes>
             <Route path="/" element={<MainPage />} />
-            <Route path="/projects" element={<Projects />} />
+            <Route path="/projects" element={<ProjectsList />} />
             <Route path="/aboutme" element={<AboutMe />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>

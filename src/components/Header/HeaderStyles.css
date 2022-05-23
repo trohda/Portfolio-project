@@ -4,7 +4,7 @@
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid rgb(141, 141, 141);
-  background-color: rgb(241, 241, 241);
+
   max-height: 300px;
   background-image: url(../../img/headerbcgr1.svg);
   background-size: cover;
@@ -23,4 +23,34 @@
   -webkit-box-shadow: 8px 8px 24px 0px rgba(0, 0, 0, 1);
   -moz-box-shadow: 8px 8px 24px 0px rgba(0, 0, 0, 1);
   box-shadow: 8px 8px 24px 0px rgba(0, 0, 0, 1);
+}
+
+.darkenMode {
+  background-color: rgba(0, 0, 0, 0.5);
+  animation-name: makeDark;
+  animation-duration: 4s;
+}
+
+@keyframes makeDark {
+  0% {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  100% {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+.lightenMode {
+  background-color: rgba(0, 0, 0, 0);
+  animation-name: makeLight;
+  animation-duration: 4s;
+}
+
+@keyframes makeLight {
+  0% {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  100% {
+    background-color: rgba(0, 0, 0, 0);
+  }
 }
