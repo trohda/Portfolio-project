@@ -149,23 +149,60 @@
     letter-spacing: 9px;
     font-size: 3.5rem;
     font-weight: 200;
+    margin: 50px 20px 0 0;
+  }
+
+  .aboutPage {
+    width: 40vw;
+    padding: 45px;
+    margin: 60px 60px;
+  }
+  .aboutPage h2 {
+    letter-spacing: 4px;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 2.1rem;
+  }
+  .aboutPage p {
+    color: darkgray;
+    letter-spacing: 2.5px;
+    word-spacing: 5px;
+    line-height: 1rem;
+    text-indent: 18px;
   }
 }
-.aboutPage {
-  width: 40vw;
-  padding: 50px;
-  margin: 60px 60px;
+
+@media only screen and (max-width: 540px) {
+  .mainPageLayout {
+    align-items: center;
+  }
+
+  .aboutPage {
+    width: 45vw;
+    padding: 38px;
+    margin: 55px 55px;
+  }
+  .aboutPage p {
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    text-indent: 16px;
+  }
 }
-.aboutPage h2 {
-  letter-spacing: 4px;
-  font-size: 1.1rem;
-  font-weight: 400;
-  line-height: 2.1rem;
-}
-.aboutPage p {
-  color: darkgray;
-  letter-spacing: 2.5px;
-  word-spacing: 5px;
-  line-height: 1rem;
-  text-indent: 18px;
+
+@media only screen and (max-width: 440px) {
+  .mainPageLayoutHeader {
+    letter-spacing: 6px;
+    font-size: 3rem;
+    margin: 40px 20px 0 0;
+  }
+  .aboutPage {
+    width: 50vw;
+    padding: 30px;
+    margin: 50px 50px;
+  }
+  .aboutPage p {
+    font-size: 0.75rem;
+    text-indent: 14px;
+  }
 }
