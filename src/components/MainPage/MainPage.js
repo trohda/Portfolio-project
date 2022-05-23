@@ -1,4 +1,7 @@
+import React from "react";
+
 import "./MainPageStyles.css";
+
 const MainPage = () => {
   return (
     <section>
@@ -6,7 +9,9 @@ const MainPage = () => {
         <div className="mainPageLayoutHeader">
           <h1>Welcome to my portfolio</h1>
         </div>
-
+        <span className="flyingSpanCSS">CSS</span>
+        <span className="flyingSpanJS">JavaScript</span>
+        <span className="flyingSpanHTML">HTML</span>
         <article>
           <div className="aboutPage">
             <h2>Welcome!</h2>
@@ -15,7 +20,9 @@ const MainPage = () => {
               here an information about my completed project and private
               information about me, by navigating through the page using the top
               menu.
-              <br />
+            </p>
+            <br />
+            <p>
               I`ve use react.js library to crate this website. Most time i`ve
               spent to give CSS style almost every element, to make the website
               look its best. Some of backgrounds i`ve drew in open source vector
