@@ -10,7 +10,7 @@ const ProjectsList = () => {
         <Project
           title={"Car Wash Page"}
           projectLink={"https://bestcarwash.netlify.app/"}
-          projectText={`Project created in a group of four persons named: "Kanuni team"`}
+          projectText={`Project created in a group named: "Kanuni". The team consisted of four people. After clicking on "more info" you can read about my part of the work  `}
         >
           <Image
             src={img}
