@@ -13,9 +13,7 @@ const AboutMe = () => {
         border: "1px solid black",
       }}
     >
-      <section>
-        <p> Here will be infos about me </p>
-      </section>
+      <p> Here will be info about me </p>
     </div>
   );
 };
