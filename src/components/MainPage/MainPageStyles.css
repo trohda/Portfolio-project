@@ -43,11 +43,22 @@
   word-spacing: 6px;
   line-height: 1.2rem;
   text-indent: 20px;
+  min-height: 300px;
+}
+
+.aboutPagePhoto {
+  float: right;
+  width: 45%;
+  margin: 20px 0 0 20px;
+}
+.pWrapper {
+  display: block;
+  contain: content;
 }
 
 .flyingSpanCSS {
   letter-spacing: 10px;
-  z-index: -100;
+  /* z-index: -100; */
   opacity: 0.2;
   position: absolute;
   animation-name: flyingSpan;
@@ -57,7 +68,7 @@
 
 .flyingSpanJS {
   letter-spacing: 10px;
-  z-index: -100;
+  /* z-index: -100; */
   opacity: 0.2;
   position: absolute;
   animation-name: flyingSpan;
@@ -69,7 +80,7 @@
 
 .flyingSpanHTML {
   letter-spacing: 10px;
-  z-index: -100;
+  /* z-index: -100; */
   opacity: 0.2;
   position: absolute;
   animation-name: flyingSpan;

@@ -4,7 +4,7 @@ import Header from "./components/Header/Header";
 import MainPage from "./components/MainPage/MainPage";
 import Navbar from "./components/Navbar/Navbar";
 import Contact from "./components/Contact/Contact";
-import ProjectsList from "./components/Projects/ProjectsList";
+import ProjectsList from "./components/ProjectsList/ProjectsList";
 import "./AppStyle.css";
 import { useState } from "react";
 import Footer from "./components/Footer/Footer";

@@ -1,11 +1,13 @@
 import "./ProjectsListStyle.css";
 import Project from "../Project/Project";
-import img from "../../img/BestcarwashMini.png";
+import img from "../../img/ProjectsGallery/CarWash/BestcarwashMainMini.png";
+import img1 from "../../img/ProjectsGallery/CarWash/BestcarwashLoginMini.png";
 import Image from "../Image/Image";
 
 const ProjectsList = () => {
   return (
     <section>
+      <div className="projectDetails"></div>
       <div className="projectsList">
         <Project
           title={"Car Wash Page"}
@@ -15,7 +17,12 @@ const ProjectsList = () => {
           <Image
             src={img}
             className={"projectsScreenshot"}
-            alt={"Mini best car wash page"}
+            alt={"Mini best car wash main page"}
+          />
+          <Image
+            src={img1}
+            className={"projectsScreenshot"}
+            alt={"Mini best car wash login page"}
           />
         </Project>
         <Project />

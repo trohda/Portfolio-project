@@ -1,23 +1,35 @@
 import Image from "../Image/Image";
-import img from "../../img/Profilephoto.jpg";
+import img from "../../img/ProfilePhotos/Profilephoto.jpg";
+import img1 from "../../img/ProfilePhotos/ProfilephotoBW.jpg";
+import img2 from "../../img/ProfilePhotos/ProfilephotoBWG.jpg";
 import "./HeaderStyles.css";
 import PersonalInfos from "../PersonalInfos/PersonalInfos";
 import { useEffect, useState } from "react";
 
 const Header = ({ currentPage }) => {
-  const [conditionStyle, setConditionStyle] = useState("");
+  const [conditionBackgroundStyle, setConditionBackgroundStyle] = useState("");
+  const [conditionProfilePhoto, setConditionProfilePhoto] = useState("");
 
   useEffect(() => {
-    if (currentPage === "MyProjects") setConditionStyle("darkenMode");
-    else if (currentPage === "MainPage") setConditionStyle("lightenMode");
-    else if (currentPage === "AboutMe") setConditionStyle("lightenMode");
-    else if (currentPage === "Contact") setConditionStyle("lightenMode");
+    if (currentPage === "MyProjects") {
+      setConditionBackgroundStyle("darkenMode");
+      setConditionProfilePhoto(img1);
+    } else if (currentPage === "MainPage") {
+      setConditionBackgroundStyle("lightenMode");
+      setConditionProfilePhoto(img2);
+    } else if (currentPage === "AboutMe") {
+      setConditionBackgroundStyle("lightenMode");
+      setConditionProfilePhoto(img);
+    } else if (currentPage === "Contact") {
+      setConditionBackgroundStyle("lightenMode");
+      setConditionProfilePhoto(img);
+    }
   }, [currentPage]);
 
   return (
-    <header className={`mainHeader ${conditionStyle}`}>
+    <header className={`mainHeader ${conditionBackgroundStyle}`}>
       <Image
-        src={img}
+        src={conditionProfilePhoto}
         className={"headerPortfolioImage "}
         alt={"Profile Photo"}
       />
