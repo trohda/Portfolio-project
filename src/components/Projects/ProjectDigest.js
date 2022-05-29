@@ -1,6 +1,11 @@
 import "./ProjectStyles.css";
-const Project = ({ children, title, projectLink, projectText }) => {
-  console.log(projectLink);
+const Project = ({
+  children,
+  title,
+  projectLink,
+  projectText,
+  handedOverFunction,
+}) => {
   return (
     <div className="singleProject">
       <div className="singleProjectHeaderBox">
@@ -20,11 +25,11 @@ const Project = ({ children, title, projectLink, projectText }) => {
             <br />
             <br />
           </p>
-          <span>See more info...</span>
+          <span onClick={handedOverFunction}>See more info...</span>
         </div>
       </div>
 
-      <div className="spanWrapper">
+      <div className="spanWrapper" onClick={handedOverFunction}>
         <div className="moreInfoLine2"></div>
         <div className="moreInfoLine1"></div>
         <span>

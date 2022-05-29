@@ -103,11 +103,13 @@
   animation-name: shineEffect;
   animation-duration: 4s;
   animation-iteration-count: infinite;
+  cursor: pointer;
 }
 
 .spanWrapper {
   text-align: end;
   line-height: 0.5rem;
+  cursor: pointer;
 }
 .spanWrapper span {
   color: rgb(0, 0, 0);
