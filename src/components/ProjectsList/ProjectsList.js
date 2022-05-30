@@ -1,18 +1,20 @@
 import "./ProjectsListStyle.css";
 import ProjectDigest from "../Projects/ProjectDigest";
 import ProjectDetails from "../Projects/ProjectDetails";
-import img from "../../img/ProjectsGallery/CarWash/BestcarwashMainMini.png";
 import img1 from "../../img/ProjectsGallery/CarWash/BestcarwashLoginMini.png";
 import Image from "../Image/Image";
 import { useState } from "react";
+import carWash from "../../data/ProjectsData";
 
 const ProjectsList = () => {
   const [showMoreInfo, setShowMoreInfo] = useState(false);
+  const [currentProject, setCurrentProject] = useState({});
 
   const clickOnMoreInfoFunction = (e, whichProject) => {
     e.preventDefault();
-    console.log(showMoreInfo);
     setShowMoreInfo(true);
+    setCurrentProject(whichProject);
+    window.scroll({ top: 300, left: 0, behavior: "smooth" });
   };
 
   return (
@@ -21,24 +23,27 @@ const ProjectsList = () => {
         <ProjectDetails
           isActive={showMoreInfo}
           setShowMoreInfo={setShowMoreInfo}
+          currentProject={currentProject}
         />
       </div>
       <div className="projectsList">
         <ProjectDigest
-          title={"Car Wash Page"}
-          projectLink={"https://bestcarwash.netlify.app/"}
-          projectText={`Project created in a group named: "Kanuni". The team consisted of four people. After clicking on "more info" you can read about my part of the work  `}
-          handedOverFunction={(e) => clickOnMoreInfoFunction(e, "carWash")}
+          title={carWash.header}
+          projectLink={carWash.pageLink}
+          projectText={carWash.shortDescription}
+          handedOverFunction={(e) => clickOnMoreInfoFunction(e, carWash)}
         >
           <Image
-            src={img}
+            src={carWash.smallGallery[0].pic}
             className={"projectsScreenshot"}
-            alt={"Mini best car wash main page"}
+            alt={carWash.smallGallery[0].alt}
+            onClick={(e) => clickOnMoreInfoFunction(e, carWash)}
           />
           <Image
-            src={img1}
+            src={carWash.smallGallery[1].pic}
             className={"projectsScreenshot"}
-            alt={"Mini best car wash login page"}
+            alt={carWash.smallGallery[1].alt}
+            onClick={(e) => clickOnMoreInfoFunction(e, carWash)}
           />
         </ProjectDigest>
         <ProjectDigest />

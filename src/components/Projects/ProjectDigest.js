@@ -1,4 +1,5 @@
-import "./ProjectStyles.css";
+import "./ProjectDigestStyles.css";
+
 const Project = ({
   children,
   title,
@@ -25,7 +26,7 @@ const Project = ({
             <br />
             <br />
           </p>
-          <span onClick={handedOverFunction}>See more info...</span>
+          <span onClick={handedOverFunction}>-See more info...</span>
         </div>
       </div>
 
