@@ -1,14 +1,15 @@
 import "./ProjectDetailsStyles.css";
-
 import Image from "../Image/Image";
 import iconClose from "../../img/Icons/iconClose.png";
 import iconPage from "../../img/Icons/iconWWW.svg";
 import iconGitHub from "../../img/Icons/iconGitHub.svg";
 import { useEffect, useState } from "react";
+import { CSSTransition } from "react-transition-group";
 
 const ProjectDetails = ({ isActive, setShowMoreInfo, currentProject }) => {
   const [projectDetailsVisibility, setProjectDetailsVisibility] =
     useState("projectDetailsNo");
+  const [bigScreenshot, setBigScreenshot] = useState({});
 
   useEffect(() => {
     isActive && setProjectDetailsVisibility("projectDetails");
@@ -18,6 +19,12 @@ const ProjectDetails = ({ isActive, setShowMoreInfo, currentProject }) => {
     setProjectDetailsVisibility("projectDetailsClose");
     setShowMoreInfo(false);
   };
+
+  const handlerClick = (e, data, id) => {
+    e.preventDefault();
+    setBigScreenshot(data[id - 1]);
+  };
+
   return (
     <div className={projectDetailsVisibility}>
       {isActive && (
@@ -62,13 +69,32 @@ const ProjectDetails = ({ isActive, setShowMoreInfo, currentProject }) => {
                       src={element.pic}
                       className={"projectsScreenshotInDetails"}
                       alt={element.alt}
+                      onClick={(event) =>
+                        handlerClick(
+                          event,
+                          currentProject.bigGallery,
+                          element.id
+                        )
+                      }
                     />
                   </div>
                 );
               })}
             </div>
           </div>
-          <div className="bigGallery"> Big Gallery</div>
+          <div className="bigGallery">
+            <CSSTransition
+              transitionName="example"
+              transitionEnterTimeout={500}
+              transitionLeaveTimeout={300}
+            >
+              <Image
+                src={bigScreenshot.pic}
+                className="bigScreenshot"
+                alt={bigScreenshot.alt}
+              />
+            </CSSTransition>
+          </div>
         </div>
       )}
     </div>
