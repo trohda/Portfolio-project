@@ -4,7 +4,6 @@ import iconClose from "../../img/Icons/iconClose.png";
 import iconPage from "../../img/Icons/iconWWW.svg";
 import iconGitHub from "../../img/Icons/iconGitHub.svg";
 import { useEffect, useState } from "react";
-import { CSSTransition } from "react-transition-group";
 
 const ProjectDetails = ({ isActive, setShowMoreInfo, currentProject }) => {
   const [projectDetailsVisibility, setProjectDetailsVisibility] =
@@ -46,7 +45,15 @@ const ProjectDetails = ({ isActive, setShowMoreInfo, currentProject }) => {
                   className={"iconPage"}
                   alt={"Page Icon"}
                 />
-                <span>{currentProject.pageLink}</span>
+                <span>
+                  <a
+                    href={currentProject.pageLink}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {currentProject.projectPageDescription}
+                  </a>
+                </span>
               </div>
 
               <div className="links gitHubLink">
@@ -55,7 +62,15 @@ const ProjectDetails = ({ isActive, setShowMoreInfo, currentProject }) => {
                   className={"iconGitHub"}
                   alt={"GitHub Icon"}
                 />
-                <span>{currentProject.gitHubLink}</span>
+                <span>
+                  <a
+                    href={currentProject.gitHubLink}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {currentProject.gitHub}
+                  </a>
+                </span>
               </div>
 
               <div className="description">{currentProject.description}</div>
@@ -83,17 +98,11 @@ const ProjectDetails = ({ isActive, setShowMoreInfo, currentProject }) => {
             </div>
           </div>
           <div className="bigGallery">
-            <CSSTransition
-              transitionName="example"
-              transitionEnterTimeout={500}
-              transitionLeaveTimeout={300}
-            >
-              <Image
-                src={bigScreenshot.pic}
-                className="bigScreenshot"
-                alt={bigScreenshot.alt}
-              />
-            </CSSTransition>
+            <Image
+              src={bigScreenshot.pic}
+              className="bigScreenshot"
+              alt={bigScreenshot.alt}
+            />
           </div>
         </div>
       )}

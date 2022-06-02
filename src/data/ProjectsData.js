@@ -13,7 +13,9 @@ import carWashUserDashboard from "../img/ProjectsGallery/CarWash/BestcarwashUser
 
 const carWash = {
   header: "Car Wash Project",
-  gitHubLink: "https://github.com/infoshareacademy/-jfddr6-team-kanuni-team",
+  projectPageDescription: "BEST CAR WASH - Netlify",
+  gitHub: "GitHub Repository",
+  gitHubLink: "https://github.com/infoshareacademy/jfddr6-team-kanuni-team",
   pageLink: "https://bestcarwash.netlify.app/",
   shortDescription: `Project created in a group named: "Kanuni". The team consisted of four people. After clicking on "more info" you can read about my part of the work`,
   description: (

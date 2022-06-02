@@ -122,10 +122,14 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  color: darkgray;
   letter-spacing: 3px;
   word-spacing: 6px;
   cursor: pointer;
+}
+.links a {
+  text-decoration: none;
+  color: darkgray;
+  word-spacing: normal;
 }
 
 .pageLink {
@@ -189,6 +193,12 @@
   box-shadow: 8px 8px 26px 2px rgb(155, 155, 155);
   opacity: 1;
 }
+.projectsScreenshotInDetailsActive {
+  transform: scale(1.2, 1.2);
+  cursor: pointer;
+  box-shadow: 8px 8px 26px 2px rgb(155, 155, 155);
+  opacity: 1;
+}
 
 .bigGallery {
   display: flex;
@@ -216,9 +226,6 @@
   }
 }
 @media only screen and (max-width: 600px) {
-  .links {
-    font-size: 0.8rem;
-  }
   .linksAndDescription {
     padding: 20px 10px 10px 10px;
   }
@@ -237,20 +244,6 @@
     text-indent: 25px;
     background-color: black;
     padding: 20px;
-  }
-}
-
-@media only screen and (max-width: 440px) {
-  .links {
-    font-size: 0.7rem;
-  }
-}
-
-@media only screen and (max-width: 400px) {
-  .links {
-    font-size: 0.5rem;
-    margin: 0;
-    padding: 5px;
   }
 }
 
@@ -281,22 +274,4 @@
     transform: scale(0, 0);
     min-height: 0;
   }
-}
-
-.example-enter {
-  opacity: 0.01;
-}
-
-.example-enter.example-enter-active {
-  opacity: 1;
-  transition: opacity 300ms ease-in;
-}
-
-.example-leave {
-  opacity: 1;
-}
-
-.example-leave.example-leave-active {
-  opacity: 0.01;
-  transition: opacity 300ms ease-in;
 }
