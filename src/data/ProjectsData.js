@@ -80,6 +80,32 @@ const carWash = {
       alt: "Mini best car wash user dashboard page",
     },
   ],
+  images: [
+    {
+      original: carWashMain,
+      thumbnail: carWashMainMini,
+    },
+    {
+      original: carWashLogin,
+      thumbnail: carWashLoginMini,
+    },
+    {
+      original: carWashAboutUs,
+      thumbnail: carWashAboutUsMini,
+    },
+    {
+      original: carWashAppointment,
+      thumbnail: carWashAppointmentMini,
+    },
+    {
+      original: carWashServices,
+      thumbnail: carWashServicesMini,
+    },
+    {
+      original: carWashUserDashboard,
+      thumbnail: carWashUserDashboardMini,
+    },
+  ],
 };
 
 export default carWash;

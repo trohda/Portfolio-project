@@ -28,7 +28,7 @@ const ProjectDetails = ({ isActive, setShowMoreInfo, currentProject }) => {
     <div className={projectDetailsVisibility}>
       {isActive && (
         <div className="contentWrapper">
-          <div className="header">
+          <div className="projectDetailsHeader">
             <h2>{`${currentProject.header} Details`}</h2>
             <Image
               src={iconClose}

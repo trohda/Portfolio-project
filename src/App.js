@@ -10,7 +10,6 @@ import { useState } from "react";
 import Footer from "./components/Footer/Footer";
 
 function App() {
-  const [currentPage, setCurrentPage] = useState("MainPage");
   //MOBILE DETECTORS
   // var viewportWidthOnStart = window.innerWidth < 700 ? "Mobile" : "Desktop";
   // const [windowWidth, setWindowWidth] = useState(viewportWidthOnStart);
@@ -23,17 +22,15 @@ function App() {
   return (
     <div>
       <BrowserRouter>
-        <Header currentPage={currentPage} />
-        <div className={currentPage}>
-          <Navbar currentPage={currentPage} setCurrentPage={setCurrentPage} />
+        <Header />
 
-          <Routes>
-            <Route path="/" element={<MainPage />} />
-            <Route path="/projects" element={<ProjectsList />} />
-            <Route path="/aboutme" element={<AboutMe />} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
-        </div>
+        <Routes>
+          <Route path="/" element={<MainPage />} />
+          <Route path="/projects" element={<ProjectsList />} />
+          <Route path="/aboutme" element={<AboutMe />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+
         <Footer />
       </BrowserRouter>
     </div>

@@ -1,39 +1,26 @@
 import Image from "../Image/Image";
-import img from "../../img/ProfilePhotos/Profilephoto.jpg";
-import img1 from "../../img/ProfilePhotos/ProfilephotoBW.jpg";
 import img2 from "../../img/ProfilePhotos/ProfilephotoBWG.jpg";
 import "./HeaderStyles.css";
 import PersonalInfos from "../PersonalInfos/PersonalInfos";
-import { useEffect, useState } from "react";
+import { useState } from "react";
+import Navbar from "../Navbar/Navbar";
 
-const Header = ({ currentPage }) => {
-  const [conditionBackgroundStyle, setConditionBackgroundStyle] = useState("");
-  const [conditionProfilePhoto, setConditionProfilePhoto] = useState("");
-
-  useEffect(() => {
-    if (currentPage === "MyProjects") {
-      setConditionBackgroundStyle("darkenMode");
-      setConditionProfilePhoto(img1);
-    } else if (currentPage === "MainPage") {
-      setConditionBackgroundStyle("lightenMode");
-      setConditionProfilePhoto(img2);
-    } else if (currentPage === "AboutMe") {
-      setConditionBackgroundStyle("lightenMode");
-      setConditionProfilePhoto(img);
-    } else if (currentPage === "Contact") {
-      setConditionBackgroundStyle("lightenMode");
-      setConditionProfilePhoto(img);
-    }
-  }, [currentPage]);
-
+const Header = () => {
+  const [currentPage, setCurrentPage] = useState("MainPage");
   return (
-    <header className={`mainHeader ${conditionBackgroundStyle}`}>
-      <Image
-        src={conditionProfilePhoto}
-        className={"headerPortfolioImage "}
-        alt={"Profile Photo"}
-      />
-      <PersonalInfos />
+    <header className="header">
+      <div className="photoAndPersonalInfos">
+        <div className="profilePhotoWrapper">
+          <Image src={img2} className={"profilePhoto"} alt={"Profile Photo"} />
+        </div>
+        <div className="personaInfosWrapper">
+          <PersonalInfos />
+        </div>
+      </div>
+
+      <div className="navBarWrapper">
+        <Navbar currentPage={currentPage} setCurrentPage={setCurrentPage} />
+      </div>
     </header>
   );
 };

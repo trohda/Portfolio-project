@@ -1,56 +1,49 @@
-.mainHeader {
+.header {
+  width: 100%;
+  height: 350px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  border-bottom: 1px solid rgb(141, 141, 141);
-
-  max-height: 300px;
   background-image: url(../../img/headerbcgr1.svg);
   background-size: cover;
-  -webkit-box-shadow: inset 0px 20px 57px -25px rgba(0, 0, 0, 1);
-  -moz-box-shadow: inset 0px 20px 57px -25px rgba(0, 0, 0, 1);
-  box-shadow: inset 0px 20px 57px -25px rgba(0, 0, 0, 1);
 }
 
-.headerPortfolioImage {
-  height: 20%;
-  width: 20%;
-  max-width: 175px;
-  max-height: 239px;
-  margin: 7% 9%;
+.photoAndPersonalInfos {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.profilePhotoWrapper {
+  height: 80%;
   border-radius: 8px;
   -webkit-box-shadow: 8px 8px 24px 0px rgba(0, 0, 0, 1);
   -moz-box-shadow: 8px 8px 24px 0px rgba(0, 0, 0, 1);
   box-shadow: 8px 8px 24px 0px rgba(0, 0, 0, 1);
 }
-
-.darkenMode {
-  background-color: rgba(0, 0, 0, 0.5);
-  animation-name: makeDark;
-  animation-duration: 4s;
+.profilePhoto {
+  height: 100%;
+  border-radius: 8px;
+  opacity: 0.85;
 }
-
-@keyframes makeDark {
-  0% {
-    background-color: rgba(0, 0, 0, 0);
-  }
-  100% {
-    background-color: rgba(0, 0, 0, 0.5);
-  }
+.personaInfosWrapper {
+  height: 80%;
+  width: 400px;
+  display: grid;
+  place-items: center;
 }
-
-.lightenMode {
-  background-color: rgba(0, 0, 0, 0);
-  animation-name: makeLight;
-  animation-duration: 4s;
+.navBarWrapper {
+  z-index: 100;
 }
-
-@keyframes makeLight {
-  0% {
-    background-color: rgba(0, 0, 0, 0.5);
+@media only screen and (max-width: 800px) {
+  .header {
+    height: 300px;
   }
-  100% {
-    background-color: rgba(0, 0, 0, 0);
+  .profilePhotoWrapper {
+    height: 70%;
+    margin-right: 20px;
   }
 }
