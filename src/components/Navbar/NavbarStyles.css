@@ -58,7 +58,7 @@ nav {
   text-align: center;
   letter-spacing: 15px;
   font-size: 2rem;
-  width: 60%;
+  width: 80%;
   height: 40px;
   padding: 25px;
   cursor: default;
@@ -80,7 +80,7 @@ nav {
 @media only screen and (max-width: 600px) {
   .navLink {
     margin-top: -1px;
-    width: 41%;
+    width: 71%;
     height: 11px;
     font-size: 0.8rem;
     border: 1px solid gray;
