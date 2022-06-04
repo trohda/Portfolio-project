@@ -3,25 +3,21 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: rgba(22, 22, 22, 0.705);
+  background-color: rgba(255, 255, 255, 0);
+  background-image: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.8) 30%,
+    rgba(0, 0, 0, 0.02) 95%
+  );
   width: 90%;
   min-height: 800px;
   padding-top: 40px;
   margin: 65px auto 0 auto;
-  border-radius: 25px 25px 0 0;
-  -webkit-box-shadow: inset 0px -100px 75px -18px rgba(0, 0, 0, 1);
-  -moz-box-shadow: inset 0px -100px 75px -18px rgba(0, 0, 0, 1);
-  box-shadow: inset 0px -100px 75px -18px rgba(0, 0, 0, 1);
+  border-radius: 20px 20px 60px 60px;
+  -webkit-box-shadow: inset 0px -32px 39px -10px rgba(255, 255, 255, 1);
+  -moz-box-shadow: inset 0px -32px 39px -10px rgba(255, 255, 255, 1);
+  box-shadow: inset 0px -32px 39px -10px rgba(255, 255, 255, 1);
 }
-
-/* .projectsListWrapper {
-  background-color: rgba(249, 249, 249, 1);
-  background-image: linear-gradient(
-    180deg,
-    rgba(249, 249, 249, 1) 11%,
-    rgba(0, 0, 0, 1) 100%
-  );
-} */
 
 .projectsScreenshot {
   border-radius: 4px;
