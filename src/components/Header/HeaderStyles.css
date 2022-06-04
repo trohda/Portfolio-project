@@ -4,8 +4,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url(../../img/headerbcgr1.svg);
-  background-size: cover;
+  /* background-image: url(../../img/headerbcgr1.svg);
+  background-size: cover; */
 }
 
 .photoAndPersonalInfos {

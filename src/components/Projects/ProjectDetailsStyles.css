@@ -5,7 +5,7 @@
 .projectDetails {
   border-radius: 8px;
   width: 90%;
-  margin: 30px auto;
+  margin: 65px auto;
   background-color: rgb(117, 117, 18);
   animation-name: showProjectDetails;
   animation-duration: 1.5s;
@@ -171,7 +171,6 @@
   justify-content: center;
   align-items: center;
   align-content: center;
-  /* border: 1px solid black; */
   padding: 35px 30px 10px 10px;
 }
 .projectsScreenshotInDetails {
@@ -226,6 +225,9 @@
   }
 }
 @media only screen and (max-width: 600px) {
+  .projectDetails {
+    margin-top: 180px;
+  }
   .linksAndDescription {
     padding: 20px 10px 10px 10px;
   }

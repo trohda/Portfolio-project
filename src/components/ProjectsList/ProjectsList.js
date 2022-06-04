@@ -18,7 +18,7 @@ const ProjectsList = () => {
   };
 
   return (
-    <section>
+    <section className="projectsListWrapper">
       <div>
         <ProjectDetails
           isActive={showMoreInfo}

@@ -22,13 +22,11 @@ const MainPage = () => {
                 here an information about my completed project and private
                 information about me, by navigating through the page using the
                 top menu.
-                <div className="aboutPagePhotoWrapper">
-                  <Image
-                    src={img}
-                    className={"aboutPagePhoto"}
-                    alt={"Tomek look up Photo"}
-                  />
-                </div>
+                <Image
+                  src={img}
+                  className={"aboutPagePhotoWrapper "}
+                  alt={"Tomek look up Photo"}
+                />
                 <br />
                 I`ve use react.js library to crate this website. Most time i`ve
                 spent to give CSS style almost every element, to make the

@@ -1,7 +1,4 @@
 .MainPage {
-  background-image: url(img/BackgroundMainPage2.svg);
-  background-size: cover;
-  background-position: center;
   background-color: rgba(0, 0, 0, 0);
   animation-name: makeWhite;
   animation-duration: 4s;

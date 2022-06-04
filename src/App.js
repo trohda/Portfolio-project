@@ -2,12 +2,13 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import AboutMe from "./components/AboutMe/AboutMe";
 import Header from "./components/Header/Header";
 import MainPage from "./components/MainPage/MainPage";
-import Navbar from "./components/Navbar/Navbar";
+
 import Contact from "./components/Contact/Contact";
 import ProjectsList from "./components/ProjectsList/ProjectsList";
 import "./AppStyle.css";
-import { useState } from "react";
+
 import Footer from "./components/Footer/Footer";
+import PageLayout from "./components/PageLayout/PageLayout";
 
 function App() {
   //MOBILE DETECTORS
@@ -22,15 +23,16 @@ function App() {
   return (
     <div>
       <BrowserRouter>
-        <Header />
+        <PageLayout>
+          <Header />
 
-        <Routes>
-          <Route path="/" element={<MainPage />} />
-          <Route path="/projects" element={<ProjectsList />} />
-          <Route path="/aboutme" element={<AboutMe />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-
+          <Routes>
+            <Route path="/" element={<MainPage />} />
+            <Route path="/projects" element={<ProjectsList />} />
+            <Route path="/aboutme" element={<AboutMe />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </PageLayout>
         <Footer />
       </BrowserRouter>
     </div>
