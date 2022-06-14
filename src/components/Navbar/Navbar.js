@@ -37,13 +37,13 @@ const Navbar = ({ currentPage, setCurrentPage }) => {
       >
         My Projects
       </NavLink>
-      <NavLink
+      {/* <NavLink
         to="/aboutme"
         className={currentPage === "AboutMe" ? "activeNavLink" : "navLink"}
         onClick={() => handlerClick("AboutMe")}
       >
         About Me
-      </NavLink>
+      </NavLink> */}
       <NavLink
         to="/contact"
         className={currentPage === "Contact" ? "activeNavLink" : "navLink"}

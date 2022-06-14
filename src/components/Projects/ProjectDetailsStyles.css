@@ -6,7 +6,7 @@
   border-radius: 8px;
   width: 90%;
   margin: 65px auto;
-  background-color: rgb(117, 117, 18);
+  background-color: rgba(74, 153, 74, 0.9);
   animation-name: showProjectDetails;
   animation-duration: 1.5s;
   animation-delay: 0.15s;
@@ -23,9 +23,9 @@
 .projectDetailsClose {
   border-radius: 8px;
   width: 90%;
-  margin: 30px auto;
+  margin: 65px auto;
   min-height: 600px;
-  background-color: rgb(117, 117, 18);
+  background-color: rgba(74, 153, 74, 0.9);
   animation-name: hideProjectDetails;
   animation-duration: 1.5s;
   animation-delay: 0.15s;
@@ -41,14 +41,14 @@
     transform: scale(1, 1);
   }
   100% {
-    opacity: 1;
+    opacity: 0.9;
     transform: scale(1, 1);
   }
 }
 @keyframes hideProjectDetails {
   0% {
     min-height: 600px;
-    opacity: 1;
+    opacity: 0.9;
     transform: scale(1, 1);
   }
   50% {

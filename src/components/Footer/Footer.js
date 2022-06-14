@@ -12,19 +12,19 @@ const Footer = () => {
         color: "gray",
       }}
     >
-      <p> Footer </p>
+      <p> Footer Under construction</p>
 
       <p
         style={{
-          fontFamily: '"Alegreya Sans SC", sans-serif',
           letterSpacing: "5px",
-          color: "white",
+          color: "lightgrey",
           position: "absolute",
-          right: "0%",
-          bottom: "0%",
+          right: "8%",
+          bottom: "2%",
+          fontSize: "1rem",
         }}
       >
-        This page was created using react
+        This page was created using React.js by Tomasz Rohda©️
       </p>
     </footer>
   );

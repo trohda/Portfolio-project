@@ -1,5 +1,5 @@
 import Image from "../Image/Image";
-import img2 from "../../img/ProfilePhotos/ProfilephotoBWG.jpg";
+import img2 from "../../img/ProfilePhotos/ProfilePhotoBW.jpg";
 import "./HeaderStyles.css";
 import PersonalInfos from "../PersonalInfos/PersonalInfos";
 import { useState } from "react";
