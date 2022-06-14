@@ -6,10 +6,10 @@ const Footer = () => {
         height: "100px",
         position: "relative",
         textAlign: "center",
-        letterSpacing: "25px",
-        fontSize: "2rem",
+        letterSpacing: "10px",
+        fontSize: "1.5rem",
         borderTop: "1px solid gray",
-        color: "gray",
+        color: "grey",
       }}
     >
       <p> Footer is Under construction</p>
