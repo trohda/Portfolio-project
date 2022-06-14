@@ -6,9 +6,11 @@
   border: 1px solid lightgrey;
   background-color: rgba(255, 255, 255, 0.747);
   border-radius: 8px;
-  -webkit-box-shadow: 8px 8px 24px 0px rgba(0, 0, 0, 0.6);
-  -moz-box-shadow: 8px 8px 24px 0px rgba(0, 0, 0, 0.6);
-  box-shadow: 8px 8px 24px 0px rgba(0, 0, 0, 0.6);
+  text-shadow: 0px 0px 3px rgba(163, 163, 163, 0.75);
+  -webkit-box-shadow: 8px 8px 24px 0px rgba(75, 75, 75, 0.6);
+  -moz-box-shadow: 8px 8px 24px 0px rgba(75, 75, 75, 0.6);
+  box-shadow: 8px 8px 24px 0px rgba(75, 75, 75, 0.6);
+  margin: 20px 10px;
 }
 
 .contactElementTopStripe {
@@ -18,10 +20,31 @@
 }
 
 .contactElementHeader {
+  color: black;
+  font-size: 1.7rem;
+  font-weight: 400;
+  letter-spacing: 4px;
+  text-align: center;
+  margin: 20px 0;
+  text-decoration: underline;
 }
 
-.contactElementContent {
+.contactElementContent a {
+  padding: 3px 15px;
+  color: rgb(158, 158, 158);
+  font-size: 1.1rem;
+  display: block;
+}
+
+.contactElementContent p {
+  color: rgb(78, 78, 78);
+  padding: 10px 15px;
+  text-align: start;
+  font-size: 1.3rem;
+  letter-spacing: 2px;
 }
 
 .contactElementFooter {
+  display: grid;
+  place-items: center;
 }
