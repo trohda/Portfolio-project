@@ -12,7 +12,7 @@ const Footer = () => {
         color: "gray",
       }}
     >
-      <p> Footer Under construction</p>
+      <p> Footer is Under construction</p>
 
       <p
         style={{

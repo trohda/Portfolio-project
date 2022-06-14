@@ -5,6 +5,7 @@ const ContactElement = ({
   headerText,
   contentText,
   contactTarget,
+  imgSvg,
 }) => {
   return (
     <div className="contactElementWrapper">
@@ -25,7 +26,7 @@ const ContactElement = ({
           );
         })}
       </div>
-      <div className="contactElementFooter"></div>
+      <div className="contactElementFooter">{imgSvg}</div>
     </div>
   );
 };

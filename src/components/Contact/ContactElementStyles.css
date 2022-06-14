@@ -1,6 +1,7 @@
 .contactElementWrapper {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   width: 310px;
   min-height: 300px;
   border: 1px solid lightgrey;
@@ -10,7 +11,7 @@
   -webkit-box-shadow: 8px 8px 24px 0px rgba(75, 75, 75, 0.6);
   -moz-box-shadow: 8px 8px 24px 0px rgba(75, 75, 75, 0.6);
   box-shadow: 8px 8px 24px 0px rgba(75, 75, 75, 0.6);
-  margin: 20px 10px;
+  margin: 0px 10px;
 }
 
 .contactElementTopStripe {
@@ -25,7 +26,6 @@
   font-weight: 400;
   letter-spacing: 4px;
   text-align: center;
-  margin: 20px 0;
   text-decoration: underline;
 }
 
@@ -47,4 +47,21 @@
 .contactElementFooter {
   display: grid;
   place-items: center;
+}
+
+.linkedIn {
+  width: 40px;
+  margin: 10px;
+  filter: invert(32%) sepia(41%) saturate(3431%) hue-rotate(178deg)
+    brightness(90%) contrast(101%);
+}
+
+.mobile {
+  width: 50px;
+  margin: 8px;
+  filter: invert(46%) sepia(25%) saturate(928%) hue-rotate(71deg)
+    brightness(93%) contrast(89%);
+}
+.mail {
+  width: 50px;
 }
