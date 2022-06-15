@@ -64,7 +64,7 @@ const Contact = () => {
         contentText="Send me a message on my LinkedIn profile:"
         contactTarget={[
           {
-            name: "https://www.linkedin.com/in/tomasz-rohda/",
+            name: "linkedin.com/tomasz-rohda",
             href: "https://www.linkedin.com/in/tomasz-rohda/",
             target: "blank",
           },
