@@ -3,7 +3,7 @@ import ProjectDigest from "../Projects/ProjectDigest";
 import ProjectDetails from "../Projects/ProjectDetails";
 import Image from "../Image/Image";
 import { useState } from "react";
-import { carWash } from "../../data/ProjectsData";
+import { carWash, todoList } from "../../data/ProjectsData";
 
 const ProjectsList = () => {
   const [showMoreInfo, setShowMoreInfo] = useState(false);
@@ -45,7 +45,25 @@ const ProjectsList = () => {
             onClick={(e) => clickOnMoreInfoFunction(e, carWash)}
           />
         </ProjectDigest>
-        <ProjectDigest />
+        <ProjectDigest
+          title={todoList.header}
+          projectLink={todoList.gitHubLink}
+          projectText={todoList.shortDescription}
+          handedOverFunction={(e) => clickOnMoreInfoFunction(e, todoList)}
+        >
+          <Image
+            src={todoList.smallGallery[0].pic}
+            className={"projectsScreenshot"}
+            alt={todoList.smallGallery[0].alt}
+            onClick={(e) => clickOnMoreInfoFunction(e, todoList)}
+          />
+          <Image
+            src={todoList.smallGallery[1].pic}
+            className={"projectsScreenshot"}
+            alt={todoList.smallGallery[1].alt}
+            onClick={(e) => clickOnMoreInfoFunction(e, todoList)}
+          />
+        </ProjectDigest>
         <ProjectDigest />
         <ProjectDigest />
       </div>

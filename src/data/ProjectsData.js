@@ -127,7 +127,7 @@ export const todoList = {
   gitHub: "GitHub Repository",
   gitHubLink:
     "https://github.com/trohda/react-projects/tree/main/React%20Todo%20List",
-  pageLink: "",
+  pageLink: "NONE - its only MVC",
   shortDescription: `Simple MVC ToDo list app. One of my first projects build using React.js library.`,
   description: (
     <>
