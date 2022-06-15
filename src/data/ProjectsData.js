@@ -1,3 +1,4 @@
+//car wash project images
 import carWashLoginMini from "../img/ProjectsGallery/CarWash/BestcarwashLoginMini.png";
 import carWashMainMini from "../img/ProjectsGallery/CarWash/BestcarwashMainMini.png";
 import carWashAboutUsMini from "../img/ProjectsGallery/CarWash/BestcarwashAboutUsMini.png";
@@ -11,6 +12,7 @@ import carWashAppointment from "../img/ProjectsGallery/CarWash/BestcarwashAppoin
 import carWashServices from "../img/ProjectsGallery/CarWash/BestcarwashServices.png";
 import carWashUserDashboard from "../img/ProjectsGallery/CarWash/BestcarwashUserDashboard.png";
 
+//todo list project images
 import todoEmptyList from "../img/ProjectsGallery/Todo/emptyList.png";
 import todoEmptyListMini from "../img/ProjectsGallery/Todo/emptyListMini.png";
 import todoTaskExamples from "../img/ProjectsGallery/Todo/taskExamples.png";
@@ -21,6 +23,16 @@ import todoOnlyActive from "../img/ProjectsGallery/Todo/onlyActive.png";
 import todoOnlyActiveMini from "../img/ProjectsGallery/Todo/onlyActiveMini.png";
 import todoAllTasksDone from "../img/ProjectsGallery/Todo/allTasksDone.png";
 import todoAllTasksDoneMini from "../img/ProjectsGallery/Todo/allTasksDoneMini.png";
+
+//olimph project images
+import olimphMainPage from "../img/ProjectsGallery/Olimph/mainPage.png";
+import olimphMainPageMini from "../img/ProjectsGallery/Olimph/mainPageMini.png";
+import olimphOffer from "../img/ProjectsGallery/Olimph/offer.png";
+import olimphOfferMini from "../img/ProjectsGallery/Olimph/offerMini.png";
+import olimphContact from "../img/ProjectsGallery/Olimph/contact.png";
+import olimphContactMini from "../img/ProjectsGallery/Olimph/contactMini.png";
+import olimphFontPicker from "../img/ProjectsGallery/Olimph/fontPicker.png";
+import olimphFontPickerMini from "../img/ProjectsGallery/Olimph/fontPickerMini.png";
 
 export const carWash = {
   header: "Car Wash Project",
@@ -93,41 +105,16 @@ export const carWash = {
       alt: "Mini best car wash user dashboard page",
     },
   ],
-  images: [
-    {
-      original: carWashMain,
-      thumbnail: carWashMainMini,
-    },
-    {
-      original: carWashLogin,
-      thumbnail: carWashLoginMini,
-    },
-    {
-      original: carWashAboutUs,
-      thumbnail: carWashAboutUsMini,
-    },
-    {
-      original: carWashAppointment,
-      thumbnail: carWashAppointmentMini,
-    },
-    {
-      original: carWashServices,
-      thumbnail: carWashServicesMini,
-    },
-    {
-      original: carWashUserDashboard,
-      thumbnail: carWashUserDashboardMini,
-    },
-  ],
 };
 
 export const todoList = {
   header: "MVC ToDo List",
-  projectPageDescription: "",
+  projectPageDescription: "NO-PAGE - its only MVC",
   gitHub: "GitHub Repository",
   gitHubLink:
     "https://github.com/trohda/react-projects/tree/main/React%20Todo%20List",
-  pageLink: "NONE - its only MVC",
+  pageLink:
+    "https://github.com/trohda/react-projects/tree/main/React%20Todo%20List",
   shortDescription: `Simple MVC ToDo list app. One of my first projects build using React.js library.`,
   description: (
     <>
@@ -149,8 +136,8 @@ export const todoList = {
         </ul>
         <br />
         Tis app is is only a model (MVC). To emulate database i`ve used REST API
-        JSON Server Node.js <br />
-        ```json-server --watch &#60 db.json path &#62 --port 8000````
+        JSON Server Node.js: <br />
+        NPM json-server --watch "db.json path" --port 8000
       </p>
     </>
   ),
@@ -188,26 +175,49 @@ export const todoList = {
       alt: "Mini marked all tasks as done on todo list",
     },
   ],
-  images: [
+};
+
+export const olimphProject = {
+  header: "Financial Institution Site",
+  projectPageDescription: "",
+  gitHub: "GitHub Repository",
+  gitHubLink: "https://github.com/trohda/project-olimph",
+  pageLink: "https://trohda.cfolks.pl/",
+  shortDescription: `Simple "3-sub-pages" site for Financial institution `,
+  description: (
+    <>
+      <p>
+        This is a simple project of "3-sub-pages" site. It was made at the
+        request of a friend who has a financial institution
+      </p>
+      <p>
+        All app was created with React.js. I used in it
+        react-router-dom-library.
+        <br />
+        On last screenshot you a can see a secret feature chich appear when You
+        click on logo. Tis feature give You a possibility to check different
+        fonts layout on page.
+      </p>
+    </>
+  ),
+  bigGallery: [
+    { id: 1, pic: olimphMainPage, alt: "Olimph main page" },
+    { id: 2, pic: olimphOffer, alt: "Olimph offer page" },
+    { id: 3, pic: olimphContact, alt: "Olimph contact page" },
     {
-      original: todoEmptyList,
-      thumbnail: todoEmptyListMini,
+      id: 4,
+      pic: olimphFontPicker,
+      alt: "Olimph main page with font picker",
     },
+  ],
+  smallGallery: [
+    { id: 1, pic: olimphMainPageMini, alt: "Mini Olimph main page" },
+    { id: 2, pic: olimphOfferMini, alt: "Mini Olimph offer page" },
+    { id: 3, pic: olimphContactMini, alt: "Mini Olimph contact page" },
     {
-      original: todoTaskExamples,
-      thumbnail: todoTaskExamplesMini,
-    },
-    {
-      original: todoDatabase,
-      thumbnail: todoDatabaseMini,
-    },
-    {
-      original: todoOnlyActive,
-      thumbnail: todoOnlyActiveMini,
-    },
-    {
-      original: todoAllTasksDone,
-      thumbnail: todoAllTasksDoneMini,
+      id: 4,
+      pic: olimphFontPickerMini,
+      alt: "Mini Olimph main page with font picker",
     },
   ],
 };

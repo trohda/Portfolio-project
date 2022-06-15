@@ -108,7 +108,7 @@
   letter-spacing: 6px;
   word-spacing: 5px;
   font-size: 1.3rem;
-  text-indent: 25px;
+
   background-color: black;
   padding: 20px;
   margin-top: 40px;
@@ -116,6 +116,14 @@
   -webkit-box-shadow: 8px 8px 24px 0px rgb(82, 82, 82);
   -moz-box-shadow: 8px 8px 24px 0px rgb(82, 82, 82);
   box-shadow: 8px 8px 24px 0px rgb(82, 82, 82);
+}
+.description p:first-child {
+  text-indent: 25px;
+}
+
+.description li {
+  list-style-type: circle;
+  margin-left: 25px;
 }
 
 .links {
