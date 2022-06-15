@@ -26,7 +26,10 @@ const ContactElement = ({
           );
         })}
       </div>
-      <div className="contactElementFooter">{imgSvg}</div>
+      <div className="contactElementFooter">
+        {imgSvg}
+        <p>Thank You</p>
+      </div>
     </div>
   );
 };

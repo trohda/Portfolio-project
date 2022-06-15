@@ -16,6 +16,25 @@
   animation-iteration-count: 1;
 }
 
+.socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.mail {
+  width: 50px;
+  padding-top: 20px;
+}
+.linkedIn {
+  width: 50px;
+  padding-top: 10px;
+}
+.whatsapp {
+  width: 48px;
+}
+
 @keyframes kotek {
   0% {
     letter-spacing: -0.5em;
