@@ -1,10 +1,9 @@
 import "./ProjectsListStyle.css";
 import ProjectDigest from "../Projects/ProjectDigest";
 import ProjectDetails from "../Projects/ProjectDetails";
-import img1 from "../../img/ProjectsGallery/CarWash/BestcarwashLoginMini.png";
 import Image from "../Image/Image";
 import { useState } from "react";
-import carWash from "../../data/ProjectsData";
+import { carWash } from "../../data/ProjectsData";
 
 const ProjectsList = () => {
   const [showMoreInfo, setShowMoreInfo] = useState(false);
