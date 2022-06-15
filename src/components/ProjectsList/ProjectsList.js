@@ -3,7 +3,7 @@ import ProjectDigest from "../Projects/ProjectDigest";
 import ProjectDetails from "../Projects/ProjectDetails";
 import Image from "../Image/Image";
 import { useState } from "react";
-import { carWash, todoList } from "../../data/ProjectsData";
+import { carWash, todoList, olimphProject } from "../../data/ProjectsData";
 
 const ProjectsList = () => {
   const [showMoreInfo, setShowMoreInfo] = useState(false);
@@ -28,7 +28,7 @@ const ProjectsList = () => {
       <div className="projectsList">
         <ProjectDigest
           title={carWash.header}
-          projectLink={carWash.pageLink}
+          projectLink={carWash.gitHubLink}
           projectText={carWash.shortDescription}
           handedOverFunction={(e) => clickOnMoreInfoFunction(e, carWash)}
         >
@@ -45,6 +45,7 @@ const ProjectsList = () => {
             onClick={(e) => clickOnMoreInfoFunction(e, carWash)}
           />
         </ProjectDigest>
+
         <ProjectDigest
           title={todoList.header}
           projectLink={todoList.gitHubLink}
@@ -64,7 +65,25 @@ const ProjectsList = () => {
             onClick={(e) => clickOnMoreInfoFunction(e, todoList)}
           />
         </ProjectDigest>
-        <ProjectDigest />
+        <ProjectDigest
+          title={olimphProject.header}
+          projectLink={olimphProject.gitHubLink}
+          projectText={olimphProject.shortDescription}
+          handedOverFunction={(e) => clickOnMoreInfoFunction(e, olimphProject)}
+        >
+          <Image
+            src={olimphProject.smallGallery[0].pic}
+            className={"projectsScreenshot"}
+            alt={olimphProject.smallGallery[0].alt}
+            onClick={(e) => clickOnMoreInfoFunction(e, olimphProject)}
+          />
+          <Image
+            src={olimphProject.smallGallery[1].pic}
+            className={"projectsScreenshot"}
+            alt={olimphProject.smallGallery[1].alt}
+            onClick={(e) => clickOnMoreInfoFunction(e, olimphProject)}
+          />
+        </ProjectDigest>
         <ProjectDigest />
       </div>
     </section>

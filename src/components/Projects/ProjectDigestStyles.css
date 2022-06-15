@@ -30,14 +30,12 @@
 }
 
 .singleProjectHeaderBox h2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  text-align: center;
   letter-spacing: 7px;
-  font-size: 1.3rem;
-  font-weight: 400;
+  font-size: 1.5rem;
+  font-weight: 500;
   line-height: 2.5rem;
+  text-shadow: 0px 0px 3px rgba(136, 136, 136, 0.85);
 }
 
 .projectScreenshots {
@@ -85,7 +83,7 @@
   color: darkgray;
   letter-spacing: 3px;
   word-spacing: 6px;
-  font-size: 0.7rem;
+  font-size: 1rem;
   text-indent: 15px;
   background-color: black;
   padding: 20px;
@@ -105,6 +103,7 @@
   animation-duration: 4s;
   animation-iteration-count: infinite;
   cursor: pointer;
+  font-size: 0.7rem;
 }
 
 .spanWrapper {
@@ -144,10 +143,6 @@
   width: 35px;
   height: 50px;
   transform: translate(360px, 40px) rotate(-180deg);
-  /* transform: translate(360px, 40px) rotate(-180deg);
-  animation-name: rotateLine2;
-  animation-duration: 1.5s;
-  animation-fill-mode: forwards; */
   position: relative;
   bottom: 10px;
   right: 10px;
