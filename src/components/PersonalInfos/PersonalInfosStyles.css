@@ -16,34 +16,6 @@
   animation-iteration-count: 1;
 }
 
-.socials {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.mail {
-  width: 50px;
-  padding-top: 20px;
-  filter: invert(11%) sepia(69%) saturate(7431%) hue-rotate(359deg)
-    brightness(92%) contrast(112%);
-}
-.linkedIn {
-  width: 50px;
-  padding-top: 12px;
-}
-.gitHub {
-  width: 60px;
-}
-
-.whatsapp {
-  width: 48px;
-}
-.mobileInHeader {
-  width: 48px;
-}
-
 @keyframes kotek {
   0% {
     letter-spacing: -0.5em;
@@ -93,23 +65,6 @@
 
   .personalInfos p {
     font-size: 0.6rem;
-  }
-
-  .mail {
-    height: 30px;
-  }
-  .linkedIn {
-    height: 25px;
-  }
-  .gitHub {
-    width: 30px;
-  }
-
-  .whatsapp {
-    width: 25px;
-  }
-  .mobileInHeader {
-    width: 29px;
   }
 }
 

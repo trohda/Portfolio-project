@@ -1,15 +1,16 @@
+import Socials from "../Atoms/Socials";
 import "./FooterStyles.css";
 const Footer = () => {
   return (
     <footer>
       <div className="footerContentWrapper">
         <div className="leftContent">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, nisi
-          natus. Corporis dolore accusamus placeat et, consequuntur
+          Thanks for visit my portfolio <br />
+          I hope You enjoy it <br />
+          and <br />I invite you to cooperation
         </div>
         <div className="rightContent">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum,
-          molestiae laudantium praesentium iusto omnis
+          <Socials />
         </div>
       </div>
       <div className="copyright">
