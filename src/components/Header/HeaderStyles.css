@@ -29,7 +29,6 @@
 }
 .personaInfosWrapper {
   height: 80%;
-  width: 400px;
   display: grid;
   place-items: center;
 }
@@ -43,5 +42,10 @@
   .profilePhotoWrapper {
     height: 60%;
     margin-right: 20px;
+    margin-left: 10px;
+  }
+  .photoAndPersonalInfos {
+    width: 100%;
+    margin-right: 10px;
   }
 }
