@@ -13,37 +13,62 @@
 
 .linkedInInSocials {
   width: 30px;
-  margin: 0;
+  margin-top: 10px;
   padding: 0;
+  /* #0077B5 */
+  filter: invert(34%) sepia(70%) saturate(6597%) hue-rotate(184deg)
+    brightness(94%) contrast(101%);
+}
+.socialPLinkedIn {
+  color: #0077b5;
+  writing-mode: vertical-rl;
 }
 
 .gitHubInSocials {
   width: 60px;
   margin: 0;
   padding: 0;
+  /* #A9A9A9 */
+}
+
+.socialPGitHub {
+  color: #a9a9a9;
+  writing-mode: vertical-rl;
 }
 
 .mailInSocials {
   width: 50px;
   padding: 0;
   margin: 0;
+  /* #DC0000 */
   filter: invert(11%) sepia(69%) saturate(7431%) hue-rotate(359deg)
     brightness(92%) contrast(112%);
 }
 
+.socialPMail {
+  color: #dc0000;
+  writing-mode: vertical-rl;
+}
+
 .whatsappInSocials {
   width: 48px;
-  margin: 0;
+  margin: 8px 0 0 0;
   padding: 0;
+  /* #2CB742 */
+}
+
+.socialPWhatssApp {
+  color: #2cb742;
+  writing-mode: vertical-rl;
 }
 
 .mobileInSocials {
-  height: 60px;
-  margin: 0;
+  height: 50px;
+  margin: 6px 0 0 0;
   padding: 0;
 }
-
-.socialP {
+.socialPMobile {
+  color: black;
   writing-mode: vertical-rl;
 }
 
@@ -53,22 +78,25 @@
   }
 
   .linkedInInSocials {
-    height: 25px;
+    height: 23px;
+    margin-top: 3px;
   }
 
   .gitHubInSocials {
-    width: 30px;
+    width: 28px;
   }
 
   .mailInSocials {
-    height: 30px;
+    height: 27px;
   }
 
   .whatsappInSocials {
-    width: 25px;
+    width: 22px;
+    margin-top: 3px;
   }
 
   .mobileInSocials {
-    width: 29px;
+    height: 27px;
+    margin-top: 5px;
   }
 }

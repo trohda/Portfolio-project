@@ -52,3 +52,15 @@ footer {
   margin: 15px 10px;
   width: 50%;
 }
+
+@media only screen and (max-width: 400px) {
+  .leftContent {
+    width: 35%;
+    padding: 0 5px;
+  }
+
+  .rightContent {
+    width: 70%;
+    margin: 10px 5px;
+  }
+}

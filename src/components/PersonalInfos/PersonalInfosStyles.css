@@ -1,12 +1,11 @@
 .personalInfos {
   font-family: "Alegreya Sans SC", sans-serif;
-  letter-spacing: 3px;
-  margin-right: 10%;
+  letter-spacing: 5px;
 }
 
 .personalInfos h1 {
   opacity: 1;
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 100;
 }
 
@@ -14,6 +13,10 @@
   animation-name: kotek;
   animation-duration: 10s;
   animation-iteration-count: 1;
+}
+
+.socialsInPersonalInfos {
+  display: none;
 }
 
 @keyframes kotek {
@@ -42,9 +45,16 @@
   font-weight: 400;
 }
 
+@media only screen and (max-width: 930px) {
+  .socialsInPersonalInfos {
+    display: flex;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .personalInfos {
     letter-spacing: 3px;
+    margin-right: 10%;
   }
   .personalInfos h1 {
     font-size: 1.6rem;
@@ -71,6 +81,7 @@
 @media only screen and (max-width: 400px) {
   .personalInfos {
     letter-spacing: 2px;
+    margin-right: 5px;
   }
   .personalInfos h1 {
     font-size: 1.4rem;

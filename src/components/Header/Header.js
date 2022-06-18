@@ -4,6 +4,7 @@ import "./HeaderStyles.css";
 import PersonalInfos from "../PersonalInfos/PersonalInfos";
 import { useState } from "react";
 import Navbar from "../Navbar/Navbar";
+import Socials from "../Atoms/Socials";
 
 const Header = () => {
   const [currentPage, setCurrentPage] = useState("MainPage");
@@ -13,8 +14,12 @@ const Header = () => {
         <div className="profilePhotoWrapper">
           <Image src={img2} className={"profilePhoto"} alt={"Profile Photo"} />
         </div>
+
         <div className="personaInfosWrapper">
           <PersonalInfos />
+        </div>
+        <div className="socialsInHeader">
+          <Socials />
         </div>
       </div>
 

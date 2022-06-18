@@ -7,7 +7,9 @@ const PersonalInfos = () => {
       <h1>Tomasz Rohda</h1>
       <hr />
       <p> - Junior FrontEnd Developer - </p>
-      <Socials />
+      <div className="socialsInPersonalInfos">
+        <Socials />
+      </div>
     </div>
   );
 };
