@@ -25,10 +25,12 @@ const PageLayout = (props) => {
 
   return (
     <div className="pageLayoutWrapper">
-      <div className="blackStripe">
-        {y > 250 && <span className="blackStripeMyName">TOMASZ ROHDA</span>}
-        <hr />
-      </div>
+      {y > 180 && (
+        <div className="blackStripe">
+          <span className="blackStripeMyName">TOMASZ ROHDA</span>
+          <hr />
+        </div>
+      )}
       {props.children}
     </div>
   );
