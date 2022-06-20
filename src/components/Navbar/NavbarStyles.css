@@ -77,23 +77,24 @@ nav {
   color: white;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 560px) {
   .navLink {
     margin-top: -1px;
     width: 71%;
     height: 11px;
     font-size: 0.8rem;
     border: 1px solid gray;
-    border-radius: 0 0 25px 8px;
+    border-radius: 6px;
     cursor: pointer;
   }
 
   .activeNavLink {
     letter-spacing: 12px;
     font-size: 1.2rem;
-    height: 20px;
+    height: 10px;
+    margin-top: 6px;
     margin-bottom: 6px;
-    border-radius: 6px 0 60px 16px;
+    border-radius: 6px;
     color: white;
     text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.75);
     -webkit-box-shadow: inset 72px 63px 39px -50px rgba(66, 68, 90, 1);
