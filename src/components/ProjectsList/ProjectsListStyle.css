@@ -35,8 +35,3 @@
   cursor: pointer;
   box-shadow: 8px 8px 26px 2px rgb(155, 155, 155);
 }
-@media only screen and (max-width: 800px) {
-  .projectsList {
-    margin-top: 170px;
-  }
-}

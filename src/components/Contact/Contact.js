@@ -5,39 +5,52 @@ import "./ContactStyles.css";
 const Contact = () => {
   return (
     <section className="contactWrapper">
-      <ContactElement
-        topStripeColor={"black"}
-        headerText={"Email-Me"}
-        contentText="Send me a mail to:"
-        contactTarget={[
-          {
-            name: "mail@tomaszrohda.pl",
-            href: "mailto: ",
-            target: "none",
-          },
-          {
-            name: "tomaszrohda2@gmail.com",
-            href: "mailto:tomaszrohda2@gmail.com",
-            target: "none",
-          },
-          {
-            name: "tomaszrohda@wp.pl",
-            href: "mailto:tomaszrohda@wp.pl",
-            target: "none",
-          },
-        ]}
-        imgSvg={
-          <svg
-            className="mail"
-            version="1.1"
-            id="Layer_1"
-            xmlns="http://www.w3.org/2000/svg"
-            x="0px"
-            y="0px"
-            viewBox="0 0 100.354 100.352"
-          >
-            <path
-              d="M93.09,76.224c0.047-0.145,0.079-0.298,0.079-0.459V22.638c0-0.162-0.032-0.316-0.08-0.462
+      <div className="sectionHeader">
+        <h1>
+          Do You want to hire me?
+          <br />
+          Are You looking for cooperation?
+          <br />
+          Do You need help in Your project?
+        </h1>
+      </div>
+      <div className="contactWrapperHeaderTwo">
+        <h2>Just contact with me:</h2>
+      </div>
+      <div className="contactWrapperHeaderCards">
+        <ContactElement
+          topStripeColor={"black"}
+          headerText={"Email-Me"}
+          contentText="Send me a mail to:"
+          contactTarget={[
+            {
+              name: "mail@tomaszrohda.pl",
+              href: "mailto: ",
+              target: "none",
+            },
+            {
+              name: "tomaszrohda2@gmail.com",
+              href: "mailto:tomaszrohda2@gmail.com",
+              target: "none",
+            },
+            {
+              name: "tomaszrohda@wp.pl",
+              href: "mailto:tomaszrohda@wp.pl",
+              target: "none",
+            },
+          ]}
+          imgSvg={
+            <svg
+              className="mail"
+              version="1.1"
+              id="Layer_1"
+              xmlns="http://www.w3.org/2000/svg"
+              x="0px"
+              y="0px"
+              viewBox="0 0 100.354 100.352"
+            >
+              <path
+                d="M93.09,76.224c0.047-0.145,0.079-0.298,0.079-0.459V22.638c0-0.162-0.032-0.316-0.08-0.462
 	c-0.007-0.02-0.011-0.04-0.019-0.06c-0.064-0.171-0.158-0.325-0.276-0.46c-0.008-0.009-0.009-0.02-0.017-0.029
 	c-0.005-0.005-0.011-0.007-0.016-0.012c-0.126-0.134-0.275-0.242-0.442-0.323c-0.013-0.006-0.023-0.014-0.036-0.02
 	c-0.158-0.071-0.33-0.111-0.511-0.123c-0.018-0.001-0.035-0.005-0.053-0.005c-0.017-0.001-0.032-0.005-0.049-0.005H8.465
@@ -54,58 +67,59 @@ const Contact = () => {
 	 M61.711,47.971c-0.104,0.068-0.214,0.125-0.301,0.221c-0.033,0.036-0.044,0.083-0.073,0.121l-11.27,10.294L12.331,24.138h75.472
 	L61.711,47.971z M37.436,51.132l11.619,10.613c0.287,0.262,0.649,0.393,1.012,0.393s0.725-0.131,1.011-0.393l11.475-10.481
 	l25.243,23.002H12.309L37.436,51.132z M64.778,49.232L90.169,26.04v46.33L64.778,49.232z"
-            />
-          </svg>
-        }
-      />
-      <ContactElement
-        topStripeColor={"#007EBB"}
-        headerText={"LinkedIn-Me"}
-        contentText="Send me a message on my LinkedIn profile:"
-        contactTarget={[
-          {
-            name: "linkedin.com/tomasz-rohda",
-            href: "https://www.linkedin.com/in/tomasz-rohda/",
-            target: "blank",
-          },
-        ]}
-        imgSvg={
-          <svg
-            className="linkedIn"
-            role="img"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <title>LinkedIn</title>
-            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-          </svg>
-        }
-      />
-      <ContactElement
-        topStripeColor={"rgba(74, 153, 74, 0.9)"}
-        headerText={"Call-Me"}
-        contentText="Call me on my number:"
-        contactTarget={[
-          {
-            name: "📞 +48 501-096-652",
-            href: "tel:501-096-652",
-            target: "none",
-          },
-        ]}
-        imgSvg={
-          <svg
-            className="mobile"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 64 64"
-          >
-            <g id="IP_XR" data-name="IP XR">
-              <path d="M43.38,3.5H20.63A4.13,4.13,0,0,0,16.5,7.63V56.38a4.13,4.13,0,0,0,4.13,4.12H43.38a4.13,4.13,0,0,0,4.12-4.12V7.63A4.13,4.13,0,0,0,43.38,3.5ZM39,4.5V5a1.25,1.25,0,0,1-1.25,1.25H26.25A1.25,1.25,0,0,1,25,5V4.5Zm7.5,51.88a3.12,3.12,0,0,1-3.12,3.12H20.63a3.13,3.13,0,0,1-3.13-3.12V7.63A3.13,3.13,0,0,1,20.63,4.5H24V5a2.25,2.25,0,0,0,2.25,2.25h11.5A2.25,2.25,0,0,0,40,5V4.5h3.38A3.13,3.13,0,0,1,46.5,7.63Z" />
-              <path d="M28.14,5.92h6a.51.51,0,0,0,.5-.5.5.5,0,0,0-.5-.5h-6a.5.5,0,0,0-.5.5A.5.5,0,0,0,28.14,5.92Z" />
-              <path d="M35.69,5.92h.17a.5.5,0,0,0,.5-.5.5.5,0,0,0-.5-.5h-.17a.5.5,0,0,0-.5.5A.51.51,0,0,0,35.69,5.92Z" />
-            </g>
-          </svg>
-        }
-      />
+              />
+            </svg>
+          }
+        />
+        <ContactElement
+          topStripeColor={"#007EBB"}
+          headerText={"LinkedIn-Me"}
+          contentText="Send me a message on my LinkedIn profile:"
+          contactTarget={[
+            {
+              name: "linkedin.com/tomasz-rohda",
+              href: "https://www.linkedin.com/in/tomasz-rohda/",
+              target: "blank",
+            },
+          ]}
+          imgSvg={
+            <svg
+              className="linkedIn"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>LinkedIn</title>
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+            </svg>
+          }
+        />
+        <ContactElement
+          topStripeColor={"rgba(74, 153, 74, 0.9)"}
+          headerText={"Call-Me"}
+          contentText="Call me on my number:"
+          contactTarget={[
+            {
+              name: "📞 +48 501-096-652",
+              href: "tel:501-096-652",
+              target: "none",
+            },
+          ]}
+          imgSvg={
+            <svg
+              className="mobile"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 64 64"
+            >
+              <g id="IP_XR" data-name="IP XR">
+                <path d="M43.38,3.5H20.63A4.13,4.13,0,0,0,16.5,7.63V56.38a4.13,4.13,0,0,0,4.13,4.12H43.38a4.13,4.13,0,0,0,4.12-4.12V7.63A4.13,4.13,0,0,0,43.38,3.5ZM39,4.5V5a1.25,1.25,0,0,1-1.25,1.25H26.25A1.25,1.25,0,0,1,25,5V4.5Zm7.5,51.88a3.12,3.12,0,0,1-3.12,3.12H20.63a3.13,3.13,0,0,1-3.13-3.12V7.63A3.13,3.13,0,0,1,20.63,4.5H24V5a2.25,2.25,0,0,0,2.25,2.25h11.5A2.25,2.25,0,0,0,40,5V4.5h3.38A3.13,3.13,0,0,1,46.5,7.63Z" />
+                <path d="M28.14,5.92h6a.51.51,0,0,0,.5-.5.5.5,0,0,0-.5-.5h-6a.5.5,0,0,0-.5.5A.5.5,0,0,0,28.14,5.92Z" />
+                <path d="M35.69,5.92h.17a.5.5,0,0,0,.5-.5.5.5,0,0,0-.5-.5h-.17a.5.5,0,0,0-.5.5A.51.51,0,0,0,35.69,5.92Z" />
+              </g>
+            </svg>
+          }
+        />
+      </div>
     </section>
   );
 };

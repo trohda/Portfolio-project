@@ -15,7 +15,7 @@ const Header = () => {
           <Image src={img2} className={"profilePhoto"} alt={"Profile Photo"} />
         </div>
 
-        <div className="personaInfosWrapper">
+        <div className="personalInfosWrapper">
           <PersonalInfos />
         </div>
         <div className="socialsInHeader">

@@ -18,6 +18,9 @@ const ProjectsList = () => {
 
   return (
     <section className="projectsListWrapper">
+      <div className="sectionHeader">
+        <h1>Here You can check digest and details of my projects</h1>
+      </div>
       <div>
         <ProjectDetails
           isActive={showMoreInfo}

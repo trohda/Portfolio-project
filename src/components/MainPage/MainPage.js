@@ -7,7 +7,7 @@ const MainPage = () => {
   return (
     <section>
       <div className="mainPageLayout">
-        <div className="mainPageLayoutHeader">
+        <div className="sectionHeader">
           <h1>Welcome to my portfolio</h1>
         </div>
         <span className="flyingSpanCSS">CSS</span>

@@ -1,8 +1,22 @@
 .contactWrapper {
   width: 100%;
   display: flex;
+  flex-direction: column;
+}
+
+.contactWrapperHeaderTwo {
+  font-size: 1.8rem;
+  letter-spacing: 6px;
+  align-self: center;
+  margin-bottom: 30px;
+  padding: 0 10px;
+  text-align: center;
+}
+
+.contactWrapperHeaderCards {
+  width: 100%;
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  padding: 110px 0;
 }

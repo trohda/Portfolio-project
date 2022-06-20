@@ -6,13 +6,10 @@ import "./PageLayoutStles.css";
 const PageLayout = (props) => {
   const [y, setY] = useState(window.scrollY);
 
-  const handleNavigation = useCallback(
-    (e) => {
-      const window = e.currentTarget;
-      setY(window.scrollY);
-    },
-    [y]
-  );
+  const handleNavigation = useCallback((e) => {
+    const window = e.currentTarget;
+    setY(window.scrollY);
+  });
 
   useEffect(() => {
     setY(window.scrollY);
