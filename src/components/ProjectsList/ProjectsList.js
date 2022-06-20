@@ -19,7 +19,7 @@ const ProjectsList = () => {
   return (
     <section className="projectsListWrapper">
       <div className="sectionHeader">
-        <h1>Here You can check digest and details of my projects</h1>
+        <h1>Here You can check digests and details of my projects</h1>
       </div>
       <div>
         <ProjectDetails
@@ -90,7 +90,7 @@ const ProjectsList = () => {
             onClick={(e) => clickOnMoreInfoFunction(e, olimphProject)}
           />
         </ProjectDigest>
-        <ProjectDigest />
+        {/* <ProjectDigest /> */}
       </div>
     </section>
   );
