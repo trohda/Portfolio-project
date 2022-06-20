@@ -4,6 +4,7 @@ const Project = ({
   children,
   title,
   projectLink,
+  projectLinkDescription,
   projectText,
   handedOverFunction,
 }) => {
@@ -18,7 +19,7 @@ const Project = ({
 
       <div className="singleProjectInfos">
         <a href={projectLink} target="_blank" rel="noreferrer">
-          {projectLink}
+          {projectLinkDescription}
         </a>
         <div className="singleProjectInfosBlackCard">
           <p>

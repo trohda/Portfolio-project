@@ -11,7 +11,7 @@
   letter-spacing: 10px;
   font-size: 4rem;
   font-weight: 200;
-  margin: 90px 0 60px 0;
+  margin: 120px 0 60px 0;
 }
 
 .mainPageLayoutHeader {
@@ -42,6 +42,7 @@
   line-height: 1.2rem;
   text-indent: 20px;
   min-height: 300px;
+  z-index: 90;
 }
 
 .aboutPagePhotoWrapper {
@@ -51,6 +52,7 @@
   border-radius: 5px;
   display: grid;
   place-content: center;
+  z-index: 90;
   -webkit-box-shadow: 7px 7px 12px -7px rgba(0, 0, 0, 0.6);
   -moz-box-shadow: 7px 7px 12px -7px rgba(0, 0, 0, 0.6);
   box-shadow: 7px 7px 12px -7px rgba(0, 0, 0, 0.6);
@@ -72,7 +74,6 @@
 
 .flyingSpanJS {
   letter-spacing: 10px;
-  /* z-index: -100; */
   opacity: 0.2;
   position: absolute;
   animation-name: flyingSpan;
@@ -84,7 +85,6 @@
 
 .flyingSpanHTML {
   letter-spacing: 10px;
-  /* z-index: -100; */
   opacity: 0.2;
   position: absolute;
   animation-name: flyingSpan;
@@ -161,8 +161,8 @@
 @media only screen and (max-width: 1300px) {
   .aboutPagePhotoWrapper {
     float: right;
-
     width: 50%;
+    z-index: 90;
   }
 }
 

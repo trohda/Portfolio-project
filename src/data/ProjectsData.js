@@ -37,7 +37,7 @@ import olimphFontPickerMini from "../img/ProjectsGallery/Olimph/fontPickerMini.p
 export const carWash = {
   header: "Car Wash Project",
   projectPageDescription: "BEST CAR WASH - Netlify",
-  gitHub: "GitHub Repository",
+  gitHub: "GitHub Repository Link",
   gitHubLink: "https://github.com/infoshareacademy/jfddr6-team-kanuni-team",
   pageLink: "https://bestcarwash.netlify.app/",
   shortDescription: `Project created in a group named: "Kanuni". The team consisted of four people. After clicking on "more info" you can read about my part of the work`,
@@ -110,7 +110,7 @@ export const carWash = {
 export const todoList = {
   header: "MVC ToDo List",
   projectPageDescription: "NO-PAGE - its only MVC",
-  gitHub: "GitHub Repository",
+  gitHub: "GitHub Repository Link",
   gitHubLink:
     "https://github.com/trohda/react-projects/tree/main/React%20Todo%20List",
   pageLink:
@@ -180,7 +180,7 @@ export const todoList = {
 export const olimphProject = {
   header: "Financial Institution Site",
   projectPageDescription: "Temporary Page",
-  gitHub: "GitHub Repository",
+  gitHub: "GitHub Repository Link",
   gitHubLink: "https://github.com/trohda/project-olimph",
   pageLink: "https://trohda.cfolks.pl/",
   shortDescription: `Simple "3-sub-pages" site for Financial institution `,

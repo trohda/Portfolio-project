@@ -6,12 +6,12 @@
   background-color: rgba(255, 255, 255, 0);
   background-image: linear-gradient(
     180deg,
-    rgba(0, 0, 0, 0.8) 30%,
+    rgba(66, 66, 66, 0.8) 30%,
     rgba(0, 0, 0, 0.02) 95%
   );
   width: 90%;
   min-height: 800px;
-  padding-top: 40px;
+  padding: 40px 0 0 0;
   margin: 65px auto 0 auto;
   border-radius: 20px 20px 60px 60px;
   -webkit-box-shadow: inset 0px -32px 39px -10px rgba(255, 255, 255, 1);
@@ -35,7 +35,7 @@
   cursor: pointer;
   box-shadow: 8px 8px 26px 2px rgb(155, 155, 155);
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   .projectsList {
     margin-top: 170px;
   }

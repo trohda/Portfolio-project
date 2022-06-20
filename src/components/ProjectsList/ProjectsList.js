@@ -28,7 +28,8 @@ const ProjectsList = () => {
       <div className="projectsList">
         <ProjectDigest
           title={carWash.header}
-          projectLink={carWash.gitHubLink}
+          projectLinkDescription={carWash.projectPageDescription}
+          projectLink={carWash.pageLink}
           projectText={carWash.shortDescription}
           handedOverFunction={(e) => clickOnMoreInfoFunction(e, carWash)}
         >
@@ -48,6 +49,7 @@ const ProjectsList = () => {
 
         <ProjectDigest
           title={todoList.header}
+          projectLinkDescription={todoList.gitHub}
           projectLink={todoList.gitHubLink}
           projectText={todoList.shortDescription}
           handedOverFunction={(e) => clickOnMoreInfoFunction(e, todoList)}
@@ -67,7 +69,8 @@ const ProjectsList = () => {
         </ProjectDigest>
         <ProjectDigest
           title={olimphProject.header}
-          projectLink={olimphProject.gitHubLink}
+          projectLinkDescription={olimphProject.projectPageDescription}
+          projectLink={olimphProject.pageLink}
           projectText={olimphProject.shortDescription}
           handedOverFunction={(e) => clickOnMoreInfoFunction(e, olimphProject)}
         >

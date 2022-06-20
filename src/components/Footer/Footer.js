@@ -7,7 +7,8 @@ const Footer = () => {
         <div className="leftContent">
           Thanks for visit my portfolio <br />
           I hope You enjoy it <br />
-          and <br />I invite you to cooperation
+          and <br />
+          I`am ready to work for YOU
         </div>
         <div className="rightContent">
           <Socials />
