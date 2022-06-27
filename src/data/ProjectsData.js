@@ -34,6 +34,14 @@ import olimphContactMini from "../img/ProjectsGallery/Olimph/contactMini.png";
 import olimphFontPicker from "../img/ProjectsGallery/Olimph/fontPicker.png";
 import olimphFontPickerMini from "../img/ProjectsGallery/Olimph/fontPickerMini.png";
 
+//vet project images
+import vetMainPage from "../img/ProjectsGallery/Vet/vetMainPage.png";
+import vetMainPageMini from "../img/ProjectsGallery/Vet/vetMainPageMini.png";
+import vetAboutPage from "../img/ProjectsGallery/Vet/vetAboutPage.png";
+import vetAboutPageMini from "../img/ProjectsGallery/Vet/vetAboutPageMini.png";
+import vetContactPage from "../img/ProjectsGallery/Vet/vetContactPage.png";
+import vetContactPageMini from "../img/ProjectsGallery/Vet/vetContactPageMini.png";
+
 export const carWash = {
   header: "Car Wash Project",
   projectPageDescription: "BEST CAR WASH - Netlify",
@@ -219,5 +227,33 @@ export const olimphProject = {
       pic: olimphFontPickerMini,
       alt: "Mini Olimph main page with font picker",
     },
+  ],
+};
+
+export const vetProject = {
+  header: "Vet Site",
+  projectPageDescription: "Weterynarz PRZYMORZE",
+  gitHub: "GitHub Repository Link",
+  gitHubLink: "https://github.com/trohda/project-vet",
+  pageLink: "https://weterynarzprzymorze.com.pl/",
+  shortDescription: `This is veterinarian website`,
+  description: (
+    <>
+      <p>
+        This is a simple project of "3-sub-pages" site. It was made at the
+        request of a friend who has a veterinary clinic
+      </p>
+      <p> Page was created using React library, react-router-dom</p>
+    </>
+  ),
+  bigGallery: [
+    { id: 1, pic: vetMainPage, alt: "Vet main page" },
+    { id: 2, pic: vetAboutPage, alt: "Vet about page" },
+    { id: 3, pic: vetContactPage, alt: "Vet contact page" },
+  ],
+  smallGallery: [
+    { id: 1, pic: vetMainPageMini, alt: "Vet main page mini" },
+    { id: 2, pic: vetAboutPageMini, alt: "Vet about page mini" },
+    { id: 3, pic: vetContactPageMini, alt: "Vet contact page mini" },
   ],
 };

@@ -3,7 +3,12 @@ import ProjectDigest from "../Projects/ProjectDigest";
 import ProjectDetails from "../Projects/ProjectDetails";
 import Image from "../Image/Image";
 import { useState } from "react";
-import { carWash, todoList, olimphProject } from "../../data/ProjectsData";
+import {
+  carWash,
+  todoList,
+  olimphProject,
+  vetProject,
+} from "../../data/ProjectsData";
 
 const ProjectsList = () => {
   const [showMoreInfo, setShowMoreInfo] = useState(false);
@@ -90,7 +95,26 @@ const ProjectsList = () => {
             onClick={(e) => clickOnMoreInfoFunction(e, olimphProject)}
           />
         </ProjectDigest>
-        {/* <ProjectDigest /> */}
+        <ProjectDigest
+          title={vetProject.header}
+          projectLinkDescription={vetProject.projectPageDescription}
+          projectLink={vetProject.pageLink}
+          projectText={vetProject.shortDescription}
+          handedOverFunction={(e) => clickOnMoreInfoFunction(e, vetProject)}
+        >
+          <Image
+            src={vetProject.smallGallery[0].pic}
+            className={"projectsScreenshot"}
+            alt={vetProject.smallGallery[0].alt}
+            onClick={(e) => clickOnMoreInfoFunction(e, vetProject)}
+          />
+          <Image
+            src={vetProject.smallGallery[1].pic}
+            className={"projectsScreenshot"}
+            alt={vetProject.smallGallery[1].alt}
+            onClick={(e) => clickOnMoreInfoFunction(e, vetProject)}
+          />
+        </ProjectDigest>
       </div>
     </section>
   );
