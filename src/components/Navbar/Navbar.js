@@ -6,48 +6,40 @@ import "./NavbarStyles.css";
 const Navbar = ({ currentPage, setCurrentPage }) => {
   const location = useLocation();
 
-  useEffect(() => {
-    if (location.pathname === "/") setCurrentPage("MainPage");
-    else if (location.pathname === "/projects") setCurrentPage("MyProjects");
-    else if (location.pathname === "/aboutme") setCurrentPage("AboutMe");
-    else if (location.pathname === "/contact") setCurrentPage("Contact");
-  }, []);
+  // useEffect(() => {
+  //   if (location.pathname === "/") setCurrentPage("MainPage");
+  //   else if (location.pathname === "/projects") setCurrentPage("MyProjects");
+  //   else if (location.pathname === "/aboutme") setCurrentPage("AboutMe");
+  //   else if (location.pathname === "/contact") setCurrentPage("Contact");
+  // }, []);
 
-  const handlerClick = (text) => {
-    setCurrentPage(text);
-  };
+  // const handlerClick = (text) => {
+  //   setCurrentPage(text);
+  // };
 
   return (
     <nav>
       <NavLink
         to="/"
-        className={currentPage === "MainPage" ? "activeNavLink" : "navLink"}
-        onClick={() => handlerClick("MainPage")}
+        className={(info) => (info.isActive ? "activeNavLink" : "navLink")}
       >
         Main Page
       </NavLink>
       <NavLink
         to="/projects"
-        className={
-          currentPage === "MyProjects"
-            ? "activeNavLink yellowNavLink"
-            : "navLink"
-        }
-        onClick={() => handlerClick("MyProjects")}
+        className={(info) => (info.isActive ? "activeNavLink" : "navLink")}
       >
         My Projects
       </NavLink>
       {/* <NavLink
         to="/aboutme"
-        className={currentPage === "AboutMe" ? "activeNavLink" : "navLink"}
-        onClick={() => handlerClick("AboutMe")}
+      className={(info) => (info.isActive ? "activeNavLink" : "navLink")}
       >
         About Me
       </NavLink> */}
       <NavLink
         to="/contact"
-        className={currentPage === "Contact" ? "activeNavLink" : "navLink"}
-        onClick={() => handlerClick("Contact")}
+        className={(info) => (info.isActive ? "activeNavLink" : "navLink")}
       >
         Contact
       </NavLink>
