@@ -1,5 +1,5 @@
 import Image from "../Image/Image";
-import img2 from "../../img/ProfilePhotos/ProfilePhotoBW.jpg";
+import headerProfilePhoto from "../../img/ProfilePhotos/Tomasz.jpg";
 import "./HeaderStyles.css";
 import PersonalInfos from "../PersonalInfos/PersonalInfos";
 import { useState } from "react";
@@ -12,7 +12,11 @@ const Header = () => {
     <header className="header">
       <div className="photoAndPersonalInfos">
         <div className="profilePhotoWrapper">
-          <Image src={img2} className={"profilePhoto"} alt={"Profile Photo"} />
+          <Image
+            src={headerProfilePhoto}
+            className={"profilePhoto"}
+            alt={"Profile Photo"}
+          />
         </div>
 
         <div className="personalInfosWrapper">

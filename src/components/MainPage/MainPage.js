@@ -1,5 +1,5 @@
 import React from "react";
-import img from "../../img/ProfilePhotos/PhotoInWelcome.jpg";
+import img from "../../img/ProfilePhotos/Profilephoto.jpg";
 import Image from "../Image/Image";
 import "./MainPageStyles.css";
 

@@ -187,10 +187,10 @@ export const todoList = {
 
 export const olimphProject = {
   header: "Financial Institution Site",
-  projectPageDescription: "Temporary Page",
+  projectPageDescription: "Temporary no page",
   gitHub: "GitHub Repository Link",
   gitHubLink: "https://github.com/trohda/project-olimph",
-  pageLink: "https://trohda.cfolks.pl/",
+  pageLink: "https://github.com/trohda/project-olimph",
   shortDescription: `Simple "3-sub-pages" site for Financial institution `,
   description: (
     <>
